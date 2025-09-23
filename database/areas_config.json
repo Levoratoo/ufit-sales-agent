@@ -1,0 +1,11 @@
+{
+    "areas": {
+        "vendas": {
+            "nome": "Vendas",
+            "icone": "💰",
+            "descricao": "Processos completos de vendas: objeções, prospecção, propostas e fechamento",
+            "cor": "#FF6B6B",
+            "arquivo": "vendas_completo_unificado.json"
+        }
+    }
+}

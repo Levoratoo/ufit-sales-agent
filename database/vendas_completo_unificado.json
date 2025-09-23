@@ -1,0 +1,1444 @@
+{
+  "area": "vendas",
+  "nome": "Vendas",
+  "descricao": "Processos completos de vendas: objeções, prospecção, propostas e fechamento",
+  "best_practices": [
+    "Siga o fluxo UFIT: acolhimento, diagnostico, construcao de valor, oferta, tratamento de objecoes, fechamento suave e follow up.",
+    "Personalize sempre usando o nome do cliente e conectando objetivos pessoais aos recursos da unidade UFIT Morretes - Itapema.",
+    "Valide cada etapa com perguntas de confirmacao antes de avancar para planos ou valores.",
+    "Reforce o clima acolhedor e a flexibilidade de horarios e metodologias para neutralizar objecoes recorrentes.",
+    "Registre compromissos e combinados no CRM logo apos cada conversa para garantir follow up consistente."
+  ],
+  "introducao": {
+    "titulo": "Biblioteca Completa de Vendas UFIT",
+    "descricao": "Esta biblioteca contém 45 cenários completos de vendas organizados por categoria: objeções, prospecção, propostas e fechamento. Use como referência completa para todas as situações de vendas.",
+    "como_usar": "Cada cenário contém: contexto da situação, objetivo da conversa, scripts prontos, perguntas estratégicas e ações práticas. Use o 'framing' para abrir, o 'opening' para engajar, as 'questions' para descobrir necessidades, o 'response_template' para apresentar valor e o 'cta' para fechar.",
+    "dicas_importantes": [
+      "Sempre use o nome do cliente para criar proximidade",
+      "Valide cada informação antes de prosseguir",
+      "Conecte o plano ao objetivo específico mencionado",
+      "Ofereça sempre uma próxima ação concreta",
+      "Mantenha tom consultivo, nunca pressione"
+    ]
+  },
+  "categorias": {
+    "objecoes": {
+      "nome": "Objeções",
+      "descricao": "Cenários para tratamento de objeções comuns em vendas",
+      "cenarios": [
+        {
+          "id": "pedido_direto_preco",
+          "nome": "Pedido Direto de Preço (Sem Contexto)",
+          "categoria": "objecoes",
+          "prioridade": "alta",
+          "descricao": "Cliente pede preço logo no início da conversa, sem dar contexto sobre seus objetivos ou necessidades",
+          "contexto_educativo": "Esta é uma das situações mais comuns em vendas. O cliente quer saber o valor antes de se comprometer, mas falar preço sem contexto pode levar a comparações inadequadas ou perda do cliente. O objetivo é puxar um diagnóstico rápido para entender o que ele realmente precisa, e só então apresentar o valor correto.",
+          "keywords": [
+            "preco",
+            "valor",
+            "quanto custa",
+            "mensalidade",
+            "caro",
+            "barato"
+          ],
+          "stages": [
+            "acolhimento",
+            "diagnostico",
+            "proposta"
+          ],
+          "objetivo": "Evitar falar preço frio e puxar diagnóstico curto para indicar o plano ideal",
+          "guidance": "Nunca fale preço sem entender o objetivo do cliente. Use o framing para explicar que precisa conhecer suas necessidades para indicar o plano certo, evitando vender algo que não vai usar.",
+          "questions": [
+            "Qual seu objetivo nos próximos 90 dias?",
+            "Quantos dias/semana você consegue treinar?",
+            "Foco em estética ou performance?"
+          ],
+          "objections": {
+            "Só quero saber o preço": "Entendo, mas cada plano tem valor diferente. Para não te vender algo caro demais, me conta rapidinho seu objetivo?",
+            "É muito caro": "Vamos ver se conseguimos encaixar no seu orçamento. Qual valor você tinha em mente?"
+          },
+          "success_metrics": [
+            "Objetivo do cliente identificado",
+            "Plano ideal classificado (FitSlim/Quality/Strong)",
+            "Valor apresentado com justificativa"
+          ],
+          "scripts": {
+            "framing": "Antes do preço, preciso te indicar o plano certo pra não te vender algo que não usa.",
+            "opening": "Claro, [Nome]! Te passo o valor certinho. Só me conta: foco em estética ou performance?",
+            "diagnostico": "Qual seu objetivo nos próximos 90 dias?",
+            "frequencia": "Quantos dias/semana você consegue treinar?",
+            "proposta": "Com o que você me contou, o melhor é começar pelo plano que garante acompanhamento e encaixa na rotina. Assim seu investimento vira resultado, não gasto.",
+            "cta": "Prefere conhecer sem compromisso ou já te mando a simulação com o melhor plano?"
+          },
+          "acoes_praticas": [
+            "Classificar objetivo (FitSlim/Quality/Strong)",
+            "Simular custo/dia e benefícios inclusos",
+            "Oferecer aula experimental para validar"
+          ]
+        },
+        {
+          "id": "cliente_medo_nao_conseguir",
+          "nome": "Cliente com Medo de Não Conseguir",
+          "categoria": "objecoes",
+          "prioridade": "alta",
+          "descricao": "Cliente demonstra insegurança e medo de não conseguir seguir o plano",
+          "contexto_educativo": "Muitos clientes têm medo de falhar, especialmente se já tentaram outras academias sem sucesso. É crucial criar confiança e mostrar que na UFIT eles terão todo o suporte necessário para alcançar seus objetivos.",
+          "keywords": [
+            "medo",
+            "nao conseguir",
+            "falhar",
+            "inseguranca",
+            "duvida",
+            "desistir"
+          ],
+          "stages": [
+            "acolhimento",
+            "diagnostico",
+            "proposta"
+          ],
+          "objetivo": "Criar confiança e mostrar suporte personalizado",
+          "guidance": "O medo é normal, mas na UFIT você não está sozinho. Mostre que temos acompanhamento próximo e metodologia testada para garantir resultados.",
+          "questions": [
+            "O que te deixa mais inseguro?",
+            "Já tentou outras academias?",
+            "O que funcionou antes?"
+          ],
+          "objections": {
+            "Vou desistir": "Por isso temos acompanhamento próximo. Você não vai estar sozinho nessa jornada.",
+            "Não tenho disciplina": "A disciplina vem com o hábito. Vamos criar isso juntos, passo a passo."
+          },
+          "success_metrics": [
+            "Medo específico identificado",
+            "Estratégia de suporte definida",
+            "Compromisso inicial estabelecido"
+          ],
+          "scripts": {
+            "framing": "O medo é normal, mas na UFIT você não está sozinho.",
+            "opening": "Entendo sua preocupação, [Nome]. O que te deixa mais inseguro?",
+            "medo": "O que te deixa mais inseguro?",
+            "experiencia": "Já tentou outras academias?",
+            "sucesso": "O que funcionou antes?",
+            "proposta": "Por isso temos acompanhamento próximo e metodologia testada. Você não vai estar sozinho nessa jornada.",
+            "cta": "Que tal começar com uma aula experimental para você se sentir mais confortável?"
+          },
+          "acoes_praticas": [
+            "Agendar aula experimental",
+            "Apresentar metodologia de acompanhamento",
+            "Definir metas pequenas e alcançáveis"
+          ]
+        },
+        {
+          "id": "cliente_preocupado_limpeza",
+          "nome": "Cliente Preocupado com Limpeza",
+          "categoria": "objecoes",
+          "prioridade": "alta",
+          "descricao": "Cliente demonstra preocupação com higiene e limpeza da academia",
+          "contexto_educativo": "A limpeza é fundamental para a experiência do cliente e sua segurança. É importante mostrar os protocolos rigorosos da UFIT e como isso impacta positivamente na experiência de treino.",
+          "keywords": [
+            "limpeza",
+            "higiene",
+            "sujo",
+            "academia",
+            "protocolo",
+            "sanitizacao"
+          ],
+          "stages": [
+            "acolhimento",
+            "proposta"
+          ],
+          "objetivo": "Mostrar protocolos de limpeza e tranquilizar o cliente",
+          "guidance": "A limpeza é prioridade absoluta na UFIT. Mostre os protocolos rigorosos e como isso garante uma experiência segura e agradável.",
+          "questions": [
+            "O que te preocupa especificamente?",
+            "Já teve experiências ruins?",
+            "O que seria ideal para você?"
+          ],
+          "objections": {
+            "Academia sempre suja": "Na UFIT temos protocolo rigoroso de limpeza a cada 2 horas.",
+            "Medo de contaminação": "Usamos produtos profissionais e equipamentos de proteção."
+          },
+          "success_metrics": [
+            "Preocupação específica identificada",
+            "Protocolos apresentados",
+            "Visita agendada para mostrar limpeza"
+          ],
+          "scripts": {
+            "framing": "A limpeza é prioridade absoluta na UFIT.",
+            "opening": "Entendo sua preocupação, [Nome]. O que te preocupa especificamente?",
+            "preocupacao": "O que te preocupa especificamente?",
+            "experiencia": "Já teve experiências ruins?",
+            "ideal": "O que seria ideal para você?",
+            "proposta": "Temos protocolo rigoroso de sanitização com produtos profissionais, limpeza a cada 2 horas e equipe dedicada.",
+            "cta": "Posso te mostrar nosso processo de limpeza na visita? Isso vai te tranquilizar."
+          },
+          "acoes_praticas": [
+            "Agendar visita para mostrar protocolos",
+            "Apresentar certificações de higiene",
+            "Mostrar equipamentos de limpeza"
+          ]
+        },
+        {
+          "id": "cliente_divergencia_informacoes",
+          "nome": "Cliente com Divergência de Informações",
+          "categoria": "objecoes",
+          "prioridade": "alta",
+          "descricao": "Cliente recebeu informações diferentes sobre serviços ou preços",
+          "contexto_educativo": "Divergências de informação podem gerar confusão e desconfiança. É importante esclarecer imediatamente, assumir responsabilidade e fornecer informações corretas e atualizadas.",
+          "keywords": [
+            "divergencia",
+            "informacao",
+            "confusao",
+            "site",
+            "promessa",
+            "diferente"
+          ],
+          "stages": [
+            "acolhimento",
+            "diagnostico",
+            "proposta"
+          ],
+          "objetivo": "Esclarecer divergências e fornecer informações corretas",
+          "guidance": "Divergências são inaceitáveis. Assuma a responsabilidade, esclareça imediatamente e forneça informações corretas e atualizadas.",
+          "questions": [
+            "Onde você viu essa informação?",
+            "O que foi prometido exatamente?",
+            "O que você esperava?"
+          ],
+          "objections": {
+            "Site dizia diferente": "Peço desculpas pela confusão. Vou verificar e corrigir imediatamente.",
+            "Foi prometido outra coisa": "Vamos resolver isso juntos. O que foi prometido exatamente?"
+          },
+          "success_metrics": [
+            "Fonte da divergência identificada",
+            "Informação correta fornecida",
+            "Correção implementada"
+          ],
+          "scripts": {
+            "framing": "Divergências são inaceitáveis. Vamos resolver isso juntos.",
+            "opening": "Peço desculpas pela confusão, [Nome]. Onde você viu essa informação?",
+            "fonte": "Onde você viu essa informação?",
+            "promessa": "O que foi prometido exatamente?",
+            "expectativa": "O que você esperava?",
+            "proposta": "Vou verificar e corrigir imediatamente. Aqui está a informação correta e atualizada.",
+            "cta": "Posso te mostrar como funciona na prática para você ter certeza?"
+          },
+          "acoes_praticas": [
+            "Verificar e corrigir fonte da divergência",
+            "Fornecer informação correta por escrito",
+            "Agendar demonstração prática"
+          ]
+        },
+        {
+          "id": "cliente_sem_tempo",
+          "nome": "Cliente Sem Tempo para Treinar",
+          "categoria": "objecoes",
+          "prioridade": "alta",
+          "descricao": "Cliente alega não ter tempo suficiente para frequentar a academia",
+          "contexto_educativo": "A objeção de tempo é uma das mais comuns. É importante mostrar flexibilidade de horários e treinos eficientes que se encaixam na rotina corrida do cliente.",
+          "keywords": [
+            "tempo",
+            "corrida",
+            "ocupado",
+            "rotina",
+            "horario",
+            "disponibilidade"
+          ],
+          "stages": [
+            "diagnostico",
+            "proposta"
+          ],
+          "objetivo": "Mostrar flexibilidade e treinos eficientes",
+          "guidance": "Todo mundo tem tempo para se exercitar. Mostre que temos horários flexíveis e treinos de 30 minutos que cabem na rotina mais corrida.",
+          "questions": [
+            "Qual sua rotina típica?",
+            "Que horários você tem livre?",
+            "Quantos minutos por dia você consegue?"
+          ],
+          "objections": {
+            "Não tenho tempo": "Todo mundo tem tempo para se exercitar. Temos treinos de 30 minutos.",
+            "Rotina muito corrida": "Por isso temos horários das 5h às 23h. Sempre cabe um tempinho."
+          },
+          "success_metrics": [
+            "Rotina do cliente mapeada",
+            "Horários disponíveis identificados",
+            "Treino personalizado proposto"
+          ],
+          "scripts": {
+            "framing": "Todo mundo tem tempo para se exercitar.",
+            "opening": "Entendo, [Nome]. Qual sua rotina típica?",
+            "rotina": "Qual sua rotina típica?",
+            "horarios": "Que horários você tem livre?",
+            "tempo": "Quantos minutos por dia você consegue?",
+            "proposta": "Temos treinos de 30 minutos e horários das 5h às 23h. Sempre cabe um tempinho para se exercitar.",
+            "cta": "Que tal começar com 30 minutos, 3x por semana?"
+          },
+          "acoes_praticas": [
+            "Mapear rotina do cliente",
+            "Sugerir horários específicos",
+            "Propor treino de 30 minutos"
+          ]
+        },
+        {
+          "id": "cliente_preco_alto",
+          "nome": "Cliente Acha o Preço Alto",
+          "categoria": "objecoes",
+          "prioridade": "alta",
+          "descricao": "Cliente considera o valor da mensalidade muito caro",
+          "contexto_educativo": "Objeções de preço são esperadas e devem ser tratadas com foco no valor e ROI. É importante quebrar o custo em valores diários e comparar com outros gastos mensais.",
+          "keywords": [
+            "caro",
+            "preco",
+            "valor",
+            "dinheiro",
+            "custo",
+            "mensalidade"
+          ],
+          "stages": [
+            "diagnostico",
+            "proposta"
+          ],
+          "objetivo": "Mostrar valor e ROI do investimento em fitness",
+          "guidance": "O investimento em fitness é sempre o melhor retorno. Quebre o valor em custo diário e compare com outros gastos mensais para mostrar o real valor.",
+          "questions": [
+            "Qual valor você tinha em mente?",
+            "Quanto você gasta com delivery por mês?",
+            "O que você gasta com entretenimento?"
+          ],
+          "objections": {
+            "É muito caro": "Vamos ver se conseguimos encaixar no seu orçamento. Qual valor você tinha em mente?",
+            "Não tenho dinheiro": "O investimento em fitness é sempre o melhor retorno. Vamos encontrar uma forma."
+          },
+          "success_metrics": [
+            "Orçamento do cliente identificado",
+            "Comparação de custos realizada",
+            "Valor justificado"
+          ],
+          "scripts": {
+            "framing": "O investimento em fitness é sempre o melhor retorno.",
+            "opening": "Entendo, [Nome]. Qual valor você tinha em mente?",
+            "orcamento": "Qual valor você tinha em mente?",
+            "delivery": "Quanto você gasta com delivery por mês?",
+            "entretenimento": "O que você gasta com entretenimento?",
+            "proposta": "O plano UFIT custa menos que delivery + entretenimento e te dá energia, disposição e autoestima.",
+            "cta": "Quer que eu faça uma simulação com o melhor plano para seu orçamento?"
+          },
+          "acoes_praticas": [
+            "Fazer simulação de custo diário",
+            "Comparar com outros gastos mensais",
+            "Propor plano de pagamento flexível"
+          ]
+        }
+      ]
+    },
+    "prospeccao": {
+      "nome": "Prospecção",
+      "descricao": "Cenários específicos para prospecção ativa de novos clientes",
+      "cenarios": [
+        {
+          "id": "prospeccao_cold_call",
+          "nome": "Cold Call - Primeiro Contato",
+          "categoria": "prospeccao",
+          "prioridade": "alta",
+          "descricao": "Primeiro contato com cliente que nunca teve contato com a UFIT",
+          "contexto_educativo": "Cold calls são fundamentais para expansão da base de clientes. O objetivo é despertar interesse e agendar uma visita ou aula experimental. É importante ser respeitoso, direto e oferecer valor imediato.",
+          "keywords": [
+            "cold call",
+            "primeiro contato",
+            "prospeccao",
+            "novo cliente",
+            "agendamento"
+          ],
+          "stages": [
+            "acolhimento",
+            "apresentacao",
+            "agendamento"
+          ],
+          "objetivo": "Despertar interesse e agendar visita ou aula experimental",
+          "guidance": "Seja respeitoso, direto e ofereça valor imediato. O objetivo é agendar, não vender no primeiro contato.",
+          "questions": [
+            "Você já conhece a UFIT?",
+            "Qual seu objetivo com atividade física?",
+            "Que horário funciona melhor para você?"
+          ],
+          "objections": {
+            "Não tenho interesse": "Entendo. Posso te enviar algumas informações sobre nossos resultados?",
+            "Não tenho tempo": "Por isso temos horários flexíveis. Qual período funciona melhor?"
+          },
+          "success_metrics": [
+            "Interesse demonstrado",
+            "Visita ou aula agendada",
+            "Contato para follow-up"
+          ],
+          "scripts": {
+            "framing": "Olá, [Nome]! Sou [Seu Nome] da UFIT Morretes. Você tem 2 minutos para eu te contar sobre algo que pode mudar sua vida?",
+            "opening": "Olá, [Nome]! Sou [Seu Nome] da UFIT Morretes. Você tem 2 minutos para eu te contar sobre algo que pode mudar sua vida?",
+            "apresentacao": "Somos uma academia que já transformou mais de 500 vidas aqui em Itapema. Nosso diferencial é o acompanhamento personalizado e resultados garantidos.",
+            "proposta": "Que tal você conhecer nossa estrutura sem compromisso? Posso agendar uma visita de 15 minutos para você ver como funciona.",
+            "cta": "Qual horário funciona melhor para você: manhã, tarde ou noite?"
+          },
+          "acoes_praticas": [
+            "Agendar visita ou aula experimental",
+            "Enviar informações por WhatsApp",
+            "Marcar follow-up em 3 dias"
+          ]
+        },
+        {
+          "id": "prospeccao_indicacao",
+          "nome": "Prospecção por Indicação",
+          "categoria": "prospeccao",
+          "prioridade": "alta",
+          "descricao": "Contato com cliente indicado por outro cliente da UFIT",
+          "contexto_educativo": "Indicações são o melhor tipo de prospecção. O cliente já vem com referência positiva e maior predisposição. É importante mencionar quem indicou e destacar os benefícios que a pessoa indicadora teve.",
+          "keywords": [
+            "indicacao",
+            "referencia",
+            "indicado",
+            "amigo",
+            "conhecido"
+          ],
+          "stages": [
+            "acolhimento",
+            "referencia",
+            "apresentacao",
+            "agendamento"
+          ],
+          "objetivo": "Aproveitar a referência positiva para agendar visita",
+          "guidance": "Mencione quem indicou e destaque os benefícios que a pessoa teve. Isso cria credibilidade imediata.",
+          "questions": [
+            "O [Nome] te contou sobre a UFIT?",
+            "Você viu os resultados que ele teve?",
+            "Que objetivo você tem com atividade física?"
+          ],
+          "objections": {
+            "Não conheço bem": "O [Nome] é cliente nosso há [tempo] e está super satisfeito. Posso te contar o que ele conquistou?",
+            "Não tenho tempo": "Por isso a UFIT é perfeita! Temos horários flexíveis e treinos de 30 minutos."
+          },
+          "success_metrics": [
+            "Referência mencionada",
+            "Benefícios do indicador destacados",
+            "Visita agendada"
+          ],
+          "scripts": {
+            "framing": "Olá, [Nome]! O [Nome do Indicador] me indicou você. Ele está super satisfeito com os resultados na UFIT.",
+            "opening": "Olá, [Nome]! O [Nome do Indicador] me indicou você. Ele está super satisfeito com os resultados na UFIT.",
+            "referencia": "O [Nome] perdeu [X kg] e está muito mais disposto. Ele disse que você também quer resultados parecidos.",
+            "proposta": "Que tal você conhecer nossa metodologia? Posso agendar uma visita para você ver como funciona.",
+            "cta": "O [Nome] disse que você prefere manhã ou tarde. Qual funciona melhor?"
+          },
+          "acoes_praticas": [
+            "Mencionar benefícios do indicador",
+            "Agendar visita personalizada",
+            "Enviar depoimento do indicador"
+          ]
+        },
+        {
+          "id": "prospeccao_redes_sociais",
+          "nome": "Prospecção via Redes Sociais",
+          "categoria": "prospeccao",
+          "prioridade": "media",
+          "descricao": "Contato com cliente que demonstrou interesse nas redes sociais",
+          "contexto_educativo": "Redes sociais são uma ferramenta poderosa de prospecção. Clientes que curtem, comentam ou compartilham já demonstram interesse. É importante ser natural e não invasivo.",
+          "keywords": [
+            "instagram",
+            "facebook",
+            "redes sociais",
+            "curtir",
+            "comentario",
+            "story"
+          ],
+          "stages": [
+            "engajamento",
+            "apresentacao",
+            "agendamento"
+          ],
+          "objetivo": "Converter interesse digital em visita presencial",
+          "guidance": "Seja natural e não invasivo. Use o engajamento digital como ponte para conversa pessoal.",
+          "questions": [
+            "Vi que você curtiu nosso post sobre [tema]",
+            "O que mais te chamou atenção?",
+            "Você já pensou em começar a treinar?"
+          ],
+          "objections": {
+            "Só estava olhando": "Entendo! Mas se chamou sua atenção, deve ter algum interesse. Posso te contar mais?",
+            "Não tenho tempo": "Por isso postamos dicas rápidas! Temos treinos de 30 minutos também."
+          },
+          "success_metrics": [
+            "Engajamento identificado",
+            "Interesse confirmado",
+            "Visita agendada"
+          ],
+          "scripts": {
+            "framing": "Oi, [Nome]! Vi que você curtiu nosso post sobre [tema]. Interessante, né?",
+            "opening": "Oi, [Nome]! Vi que você curtiu nosso post sobre [tema]. Interessante, né?",
+            "engajamento": "O que mais te chamou atenção no post?",
+            "proposta": "Que tal você conhecer nossa metodologia pessoalmente? Posso agendar uma visita.",
+            "cta": "Qual horário funciona melhor para você?"
+          },
+          "acoes_praticas": [
+            "Identificar engajamento específico",
+            "Agendar visita personalizada",
+            "Enviar conteúdo relacionado"
+          ]
+        },
+        {
+          "id": "prospeccao_evento",
+          "nome": "Prospecção em Eventos",
+          "categoria": "prospeccao",
+          "prioridade": "alta",
+          "descricao": "Contato com cliente em feiras, eventos ou ações promocionais",
+          "contexto_educativo": "Eventos são excelentes para prospecção porque o cliente já está em um ambiente propício para conhecer novidades. É importante ser objetivo e criar senso de urgência.",
+          "keywords": [
+            "evento",
+            "feira",
+            "acao promocional",
+            "stand",
+            "demonstracao"
+          ],
+          "stages": [
+            "abordagem",
+            "demonstracao",
+            "proposta",
+            "agendamento"
+          ],
+          "objetivo": "Aproveitar o ambiente do evento para agendar visita",
+          "guidance": "Seja objetivo e crie senso de urgência. O cliente está em um ambiente propício para conhecer novidades.",
+          "questions": [
+            "Você já conhece a UFIT?",
+            "Qual seu objetivo com atividade física?",
+            "Que tal conhecer nossa metodologia?"
+          ],
+          "objections": {
+            "Só estou olhando": "Perfeito! Por isso estamos aqui. Posso te mostrar como funciona em 2 minutos?",
+            "Não tenho tempo": "Por isso temos horários flexíveis! Qual período funciona melhor?"
+          },
+          "success_metrics": [
+            "Interesse demonstrado",
+            "Demonstração realizada",
+            "Visita agendada"
+          ],
+          "scripts": {
+            "framing": "Oi! Bem-vindo ao stand da UFIT! Você já nos conhece?",
+            "opening": "Oi! Bem-vindo ao stand da UFIT! Você já nos conhece?",
+            "demonstracao": "Posso te mostrar nossa metodologia em 2 minutos? É bem interessante!",
+            "proposta": "Que tal você conhecer nossa academia? Posso agendar uma visita gratuita.",
+            "cta": "Qual horário funciona melhor para você?"
+          },
+          "acoes_praticas": [
+            "Realizar demonstração rápida",
+            "Agendar visita no local",
+            "Coletar contato para follow-up"
+          ]
+        },
+        {
+          "id": "prospeccao_parceria",
+          "nome": "Prospecção via Parcerias",
+          "categoria": "prospeccao",
+          "prioridade": "media",
+          "descricao": "Contato com cliente indicado por parceiros comerciais",
+          "contexto_educativo": "Parcerias comerciais são uma fonte valiosa de prospecção. O parceiro já fez o trabalho de qualificação inicial. É importante mencionar a parceria e destacar os benefícios mútuos.",
+          "keywords": [
+            "parceria",
+            "parceiro",
+            "indicacao comercial",
+            "referencia",
+            "negocio"
+          ],
+          "stages": [
+            "referencia",
+            "apresentacao",
+            "proposta",
+            "agendamento"
+          ],
+          "objetivo": "Aproveitar a parceria para gerar novos clientes",
+          "guidance": "Mencione a parceria e destaque os benefícios mútuos. O parceiro já fez a qualificação inicial.",
+          "questions": [
+            "O [Parceiro] te indicou a UFIT?",
+            "Você conhece nossa parceria com eles?",
+            "Que objetivo você tem com atividade física?"
+          ],
+          "objections": {
+            "Não conheço a parceria": "Trabalhamos juntos com o [Parceiro] para oferecer benefícios exclusivos aos clientes.",
+            "Não tenho interesse": "Entendo. Posso te enviar informações sobre nossos benefícios exclusivos?"
+          },
+          "success_metrics": [
+            "Parceria mencionada",
+            "Benefícios exclusivos destacados",
+            "Visita agendada"
+          ],
+          "scripts": {
+            "framing": "Olá, [Nome]! O [Parceiro] me indicou você. Temos uma parceria especial com eles.",
+            "opening": "Olá, [Nome]! O [Parceiro] me indicou você. Temos uma parceria especial com eles.",
+            "parceria": "Nossos clientes têm benefícios exclusivos com o [Parceiro]. É uma parceria que beneficia todos.",
+            "proposta": "Que tal você conhecer nossa metodologia? Posso agendar uma visita com desconto especial.",
+            "cta": "Qual horário funciona melhor para você?"
+          },
+          "acoes_praticas": [
+            "Mencionar benefícios da parceria",
+            "Agendar visita com desconto",
+            "Enviar informações da parceria"
+          ]
+        },
+        {
+          "id": "prospeccao_reagendamento",
+          "nome": "Reagendamento de Visita",
+          "categoria": "prospeccao",
+          "prioridade": "alta",
+          "descricao": "Reagendamento de cliente que não compareceu à visita agendada",
+          "contexto_educativo": "Reagendamentos são comuns e importantes para não perder leads qualificados. É importante ser compreensivo e flexível, mas também criar senso de urgência.",
+          "keywords": [
+            "reagendamento",
+            "nao compareceu",
+            "falta",
+            "visita",
+            "agendamento"
+          ],
+          "stages": [
+            "acolhimento",
+            "compreensao",
+            "reagendamento",
+            "urgencia"
+          ],
+          "objetivo": "Reagendar visita e manter o interesse do cliente",
+          "guidance": "Seja compreensivo e flexível, mas crie senso de urgência. O cliente já demonstrou interesse anteriormente.",
+          "questions": [
+            "O que aconteceu na visita agendada?",
+            "Ainda tem interesse em conhecer a UFIT?",
+            "Qual horário funciona melhor agora?"
+          ],
+          "objections": {
+            "Não tenho mais interesse": "Entendo. Posso te enviar algumas informações sobre nossos resultados?",
+            "Não tenho tempo": "Por isso temos horários flexíveis! Qual período funciona melhor?"
+          },
+          "success_metrics": [
+            "Motivo da falta identificado",
+            "Interesse reconfirmado",
+            "Visita reagendada"
+          ],
+          "scripts": {
+            "framing": "Oi, [Nome]! Vi que você não conseguiu vir na visita agendada. Tudo bem?",
+            "opening": "Oi, [Nome]! Vi que você não conseguiu vir na visita agendada. Tudo bem?",
+            "compreensao": "Entendo, imprevistos acontecem. Ainda tem interesse em conhecer a UFIT?",
+            "proposta": "Que tal reagendarmos? Temos uma promoção especial esta semana.",
+            "cta": "Qual horário funciona melhor para você?"
+          },
+          "acoes_praticas": [
+            "Identificar motivo da falta",
+            "Reagendar visita",
+            "Oferecer benefício adicional"
+          ]
+        },
+        {
+          "id": "prospeccao_follow_up",
+          "nome": "Follow-up de Prospecção",
+          "categoria": "prospeccao",
+          "prioridade": "alta",
+          "descricao": "Follow-up com cliente que demonstrou interesse mas não agendou visita",
+          "contexto_educativo": "Follow-ups são essenciais para converter leads em clientes. É importante ser persistente mas respeitoso, e sempre oferecer valor adicional a cada contato.",
+          "keywords": [
+            "follow up",
+            "retorno",
+            "persistencia",
+            "lead",
+            "conversao"
+          ],
+          "stages": [
+            "retomada",
+            "valor",
+            "proposta",
+            "agendamento"
+          ],
+          "objetivo": "Manter o interesse e converter o lead em visita",
+          "guidance": "Seja persistente mas respeitoso. Sempre ofereça valor adicional a cada contato para manter o interesse.",
+          "questions": [
+            "Você ainda tem interesse em conhecer a UFIT?",
+            "O que te impediu de agendar a visita?",
+            "Posso te enviar algumas informações?"
+          ],
+          "objections": {
+            "Não tenho mais interesse": "Entendo. Posso te enviar algumas informações sobre nossos resultados?",
+            "Não tenho tempo": "Por isso temos horários flexíveis! Qual período funciona melhor?"
+          },
+          "success_metrics": [
+            "Interesse reconfirmado",
+            "Obstáculo identificado",
+            "Visita agendada"
+          ],
+          "scripts": {
+            "framing": "Oi, [Nome]! Como você está? Ainda tem interesse em conhecer a UFIT?",
+            "opening": "Oi, [Nome]! Como você está? Ainda tem interesse em conhecer a UFIT?",
+            "valor": "Tenho uma novidade interessante para te contar sobre nossa metodologia.",
+            "proposta": "Que tal agendarmos uma visita? Posso te mostrar algo que vai te surpreender.",
+            "cta": "Qual horário funciona melhor para você?"
+          },
+          "acoes_praticas": [
+            "Oferecer valor adicional",
+            "Agendar visita",
+            "Enviar conteúdo relevante"
+          ]
+        },
+        {
+          "id": "prospeccao_competencia",
+          "nome": "Prospecção de Cliente da Concorrência",
+          "categoria": "prospeccao",
+          "prioridade": "media",
+          "descricao": "Contato com cliente que treina em outra academia",
+          "contexto_educativo": "Prospecção de clientes da concorrência requer cuidado e respeito. É importante destacar diferenciais sem falar mal da concorrência, e oferecer valor real.",
+          "keywords": [
+            "concorrencia",
+            "outra academia",
+            "competencia",
+            "diferencial",
+            "mudanca"
+          ],
+          "stages": [
+            "abordagem",
+            "diferencial",
+            "proposta",
+            "agendamento"
+          ],
+          "objetivo": "Destacar diferenciais e agendar visita",
+          "guidance": "Seja respeitoso com a concorrência e destaque seus diferenciais. Ofereça valor real, não apenas preço.",
+          "questions": [
+            "Você treina em alguma academia?",
+            "Como está sendo sua experiência?",
+            "Já ouviu falar da UFIT?"
+          ],
+          "objections": {
+            "Estou satisfeito": "Que bom! Posso te contar sobre nossos diferenciais?",
+            "Não tenho interesse": "Entendo. Posso te enviar algumas informações sobre nossos resultados?"
+          },
+          "success_metrics": [
+            "Diferenciais destacados",
+            "Interesse demonstrado",
+            "Visita agendada"
+          ],
+          "scripts": {
+            "framing": "Oi, [Nome]! Você treina em alguma academia? Posso te contar sobre nossos diferenciais?",
+            "opening": "Oi, [Nome]! Você treina em alguma academia? Posso te contar sobre nossos diferenciais?",
+            "diferencial": "Nosso diferencial é o acompanhamento personalizado e resultados garantidos.",
+            "proposta": "Que tal você conhecer nossa metodologia? Posso agendar uma visita gratuita.",
+            "cta": "Qual horário funciona melhor para você?"
+          },
+          "acoes_praticas": [
+            "Destacar diferenciais únicos",
+            "Agendar visita gratuita",
+            "Enviar depoimentos de clientes"
+          ]
+        },
+        {
+          "id": "prospeccao_retorno",
+          "nome": "Prospecção de Cliente que Parou",
+          "categoria": "prospeccao",
+          "prioridade": "alta",
+          "descricao": "Contato com ex-cliente que parou de treinar na UFIT",
+          "contexto_educativo": "Ex-clientes são uma fonte valiosa de prospecção. Eles já conhecem a UFIT e podem ter parado por motivos específicos. É importante entender o motivo e oferecer soluções.",
+          "keywords": [
+            "ex-cliente",
+            "parou",
+            "retorno",
+            "reativacao",
+            "motivo"
+          ],
+          "stages": [
+            "acolhimento",
+            "motivo",
+            "solucao",
+            "reativacao"
+          ],
+          "objetivo": "Entender o motivo da parada e reativar o cliente",
+          "guidance": "Seja acolhedor e entenda o motivo da parada. Ofereça soluções específicas para os problemas identificados.",
+          "questions": [
+            "Como você está? Faz tempo que não te vejo na UFIT",
+            "O que aconteceu? Por que parou de treinar?",
+            "Que tal voltarmos a treinar juntos?"
+          ],
+          "objections": {
+            "Não tenho mais tempo": "Entendo. Temos horários mais flexíveis agora. Qual período funciona melhor?",
+            "Não tenho mais interesse": "Entendo. Posso te contar sobre nossas novidades?"
+          },
+          "success_metrics": [
+            "Motivo da parada identificado",
+            "Solução oferecida",
+            "Cliente reativado"
+          ],
+          "scripts": {
+            "framing": "Oi, [Nome]! Como você está? Faz tempo que não te vejo na UFIT.",
+            "opening": "Oi, [Nome]! Como você está? Faz tempo que não te vejo na UFIT.",
+            "motivo": "O que aconteceu? Por que parou de treinar?",
+            "solucao": "Temos novidades que podem te interessar. Que tal você conhecer?",
+            "cta": "Qual horário funciona melhor para você?"
+          },
+          "acoes_praticas": [
+            "Identificar motivo da parada",
+            "Oferecer solução específica",
+            "Reativar cliente"
+          ]
+        },
+        {
+          "id": "prospeccao_grupo",
+          "nome": "Prospecção em Grupo",
+          "categoria": "prospeccao",
+          "prioridade": "media",
+          "descricao": "Contato com grupo de pessoas interessadas em treinar juntas",
+          "contexto_educativo": "Prospecção em grupo é eficiente e pode gerar múltiplos clientes. É importante identificar o líder do grupo e oferecer benefícios especiais para grupos.",
+          "keywords": [
+            "grupo",
+            "amigos",
+            "familia",
+            "colegas",
+            "beneficio especial"
+          ],
+          "stages": [
+            "identificacao",
+            "lider",
+            "proposta",
+            "agendamento"
+          ],
+          "objetivo": "Identificar o líder do grupo e oferecer benefícios especiais",
+          "guidance": "Identifique o líder do grupo e ofereça benefícios especiais. Grupos tendem a ser mais fiéis e geram indicações.",
+          "questions": [
+            "Vocês treinam juntos?",
+            "Quem coordena o grupo?",
+            "Que tal conhecerem a UFIT juntos?"
+          ],
+          "objections": {
+            "Não treinamos juntos": "Que tal começarem? Temos benefícios especiais para grupos.",
+            "Não temos interesse": "Entendo. Posso te enviar informações sobre nossos benefícios para grupos?"
+          },
+          "success_metrics": [
+            "Líder do grupo identificado",
+            "Benefícios especiais oferecidos",
+            "Visita em grupo agendada"
+          ],
+          "scripts": {
+            "framing": "Oi! Vocês treinam juntos? Temos benefícios especiais para grupos.",
+            "opening": "Oi! Vocês treinam juntos? Temos benefícios especiais para grupos.",
+            "lider": "Quem coordena o grupo? Posso falar com essa pessoa?",
+            "proposta": "Que tal vocês conhecerem a UFIT juntos? Temos descontos especiais.",
+            "cta": "Qual horário funciona melhor para vocês?"
+          },
+          "acoes_praticas": [
+            "Identificar líder do grupo",
+            "Oferecer benefícios especiais",
+            "Agendar visita em grupo"
+          ]
+        }
+      ]
+    },
+    "proposta": {
+      "nome": "Metodologias UFIT",
+      "descricao": "Cenários para venda das metodologias específicas da UFIT: FitSlim, Fit Quality e FitStrong",
+      "cenarios": [
+        {
+          "id": "venda_fitslim",
+          "nome": "Venda da Metodologia FitSlim",
+          "categoria": "proposta",
+          "prioridade": "alta",
+          "descricao": "Apresentação e venda da metodologia FitSlim para emagrecimento",
+          "contexto_educativo": "O FitSlim é nossa metodologia focada em emagrecimento através de déficit calórico e treinos de alta intensidade. É ideal para clientes que querem perder peso de forma eficiente e sustentável.",
+          "keywords": [
+            "fitslim",
+            "emagrecimento",
+            "perder peso",
+            "deficit calorico",
+            "alta intensidade",
+            "emagrecer"
+          ],
+          "stages": [
+            "diagnostico",
+            "apresentacao_metodologia",
+            "beneficios",
+            "fechamento"
+          ],
+          "objetivo": "Apresentar e vender a metodologia FitSlim com foco em emagrecimento",
+          "guidance": "Destaque os 4 pilares do FitSlim: acompanhamento nutricional, treinos personalizados, aulas coletivas e déficit calórico. Mostre que é um método completo e testado.",
+          "questions": [
+            "Qual seu objetivo com emagrecimento?",
+            "Já tentou outras dietas ou métodos?",
+            "Quantos quilos você quer perder?"
+          ],
+          "objections": {
+            "Já tentei e não funcionou": "O FitSlim é diferente porque tem acompanhamento nutricional e treinos personalizados. Não é só dieta.",
+            "Não tenho tempo": "Por isso temos treinos de 30-40 minutos e aulas coletivas flexíveis."
+          },
+          "success_metrics": [
+            "Objetivo de emagrecimento definido",
+            "Metodologia apresentada",
+            "Avaliação agendada"
+          ],
+          "scripts": {
+            "framing": "O FitSlim é nossa metodologia completa para emagrecimento sustentável.",
+            "opening": "Beleza, [Nome]! Qual seu objetivo com emagrecimento?",
+            "objetivo": "Qual seu objetivo com emagrecimento?",
+            "experiencia": "Já tentou outras dietas ou métodos?",
+            "meta": "Quantos quilos você quer perder?",
+            "apresentacao": "O FitSlim tem 4 pilares: acompanhamento nutricional com 4 consultas anuais, treinos personalizados com 4 trocas ao ano, mais de 8 aulas coletivas e déficit calórico com treinos de alta intensidade.",
+            "beneficios": "Nosso método ajuda você a ter músculos mais fortes e saudáveis, eliminando aquelas gorduras indesejadas de forma eficiente.",
+            "proposta": "Quer começar com uma avaliação completa para montar seu plano FitSlim personalizado?",
+            "cta": "Qual horário funciona melhor para sua avaliação?"
+          },
+          "acoes_praticas": [
+            "Apresentar material do FitSlim",
+            "Agendar avaliação física",
+            "Marcar consulta nutricional"
+          ]
+        },
+        {
+          "id": "venda_fit_quality",
+          "nome": "Venda da Metodologia Fit Quality",
+          "categoria": "proposta",
+          "prioridade": "alta",
+          "descricao": "Apresentação e venda da metodologia Fit Quality para bem-estar geral",
+          "contexto_educativo": "O Fit Quality é nossa metodologia focada em bem-estar geral, qualidade de vida e equilíbrio entre corpo e mente. É ideal para clientes que buscam uma vida mais saudável e equilibrada.",
+          "keywords": [
+            "fit quality",
+            "bem-estar",
+            "qualidade de vida",
+            "equilibrio",
+            "saudavel",
+            "vida longa"
+          ],
+          "stages": [
+            "diagnostico",
+            "apresentacao_metodologia",
+            "beneficios",
+            "fechamento"
+          ],
+          "objetivo": "Apresentar e vender a metodologia Fit Quality com foco em bem-estar",
+          "guidance": "Destaque os 4 pilares do Fit Quality: acompanhamento nutricional, treinos personalizados, aulas coletivas e benefícios físicos e emocionais. Mostre que é um método para vida toda.",
+          "questions": [
+            "O que você busca para sua qualidade de vida?",
+            "Como está seu nível de estresse?",
+            "Você pratica alguma atividade física regularmente?"
+          ],
+          "objections": {
+            "Não tenho tempo": "Por isso o Fit Quality tem horários flexíveis e aulas coletivas variadas.",
+            "Não sei se funciona": "O Fit Quality já transformou centenas de vidas. Posso te mostrar depoimentos."
+          },
+          "success_metrics": [
+            "Necessidades de bem-estar identificadas",
+            "Metodologia apresentada",
+            "Avaliação agendada"
+          ],
+          "scripts": {
+            "framing": "O Fit Quality é nossa metodologia para uma vida mais longa e saudável.",
+            "opening": "Beleza, [Nome]! O que você busca para sua qualidade de vida?",
+            "objetivo": "O que você busca para sua qualidade de vida?",
+            "estresse": "Como está seu nível de estresse?",
+            "atividade": "Você pratica alguma atividade física regularmente?",
+            "apresentacao": "O Fit Quality tem 4 pilares: acompanhamento nutricional com 4 consultas anuais, treinos personalizados com 4 trocas ao ano, mais de 8 aulas coletivas e benefícios físicos e emocionais como alívio do estresse e melhora do humor.",
+            "beneficios": "Nosso método visa ajudar você a ter uma vida mais longa e saudável. Sabemos que a prática regular de exercício físico é fundamental para manter nossa saúde.",
+            "proposta": "Quer começar com uma avaliação completa para montar seu plano Fit Quality personalizado?",
+            "cta": "Qual horário funciona melhor para sua avaliação?"
+          },
+          "acoes_praticas": [
+            "Apresentar material do Fit Quality",
+            "Agendar avaliação física",
+            "Marcar consulta nutricional"
+          ]
+        },
+        {
+          "id": "venda_fitstrong",
+          "nome": "Venda da Metodologia FitStrong",
+          "categoria": "proposta",
+          "prioridade": "alta",
+          "descricao": "Apresentação e venda da metodologia FitStrong para ganho de massa e força",
+          "contexto_educativo": "O FitStrong é nossa metodologia focada em hipertrofia, ganho de massa muscular e força. É ideal para clientes que querem desenvolver musculatura de forma segura e eficiente.",
+          "keywords": [
+            "fitstrong",
+            "massa muscular",
+            "forca",
+            "hipertrofia",
+            "sobrecarga",
+            "crescimento"
+          ],
+          "stages": [
+            "diagnostico",
+            "apresentacao_metodologia",
+            "beneficios",
+            "fechamento"
+          ],
+          "objetivo": "Apresentar e vender a metodologia FitStrong com foco em hipertrofia",
+          "guidance": "Destaque os 4 pilares do FitStrong: acompanhamento nutricional, treinos personalizados, hipertrofia com sobrecarga progressiva e equipamentos de qualidade. Mostre que é um método profissional.",
+          "questions": [
+            "Qual seu objetivo com ganho de massa?",
+            "Já treina há quanto tempo?",
+            "Tem acompanhamento nutricional?"
+          ],
+          "objections": {
+            "Não tenho tempo": "Por isso o FitStrong tem treinos eficientes de 45-60min focados em hipertrofia.",
+            "Não tenho dinheiro": "O FitStrong inclui acompanhamento nutricional e personalização. É um investimento completo."
+          },
+          "success_metrics": [
+            "Objetivo de massa definido",
+            "Metodologia apresentada",
+            "Avaliação agendada"
+          ],
+          "scripts": {
+            "framing": "O FitStrong é nossa metodologia profissional para ganho de massa e força.",
+            "opening": "Beleza, [Nome]! Qual seu objetivo com ganho de massa?",
+            "objetivo": "Qual seu objetivo com ganho de massa?",
+            "experiencia": "Já treina há quanto tempo?",
+            "nutricao": "Tem acompanhamento nutricional?",
+            "apresentacao": "O FitStrong tem 4 pilares: acompanhamento nutricional com 4 consultas anuais, treinos personalizados com 4 trocas ao ano, hipertrofia com sobrecarga progressiva e superávit calórico, e os melhores equipamentos do mercado.",
+            "beneficios": "Nosso método ajuda você a ter músculos mais fortes e saudáveis. Sabemos que é fundamental para a manutenção de uma boa saúde termos músculos fortes e resistentes.",
+            "proposta": "Quer começar com uma avaliação completa para montar seu plano FitStrong personalizado?",
+            "cta": "Qual horário funciona melhor para sua avaliação?"
+          },
+          "acoes_praticas": [
+            "Apresentar material do FitStrong",
+            "Agendar avaliação física",
+            "Marcar consulta nutricional"
+          ]
+        }
+      ]
+    },
+    "fechamento": {
+      "nome": "Fechamento",
+      "descricao": "Cenários específicos para fechamento de vendas e maximização de conversões",
+      "cenarios": [
+        {
+          "id": "fechamento_assumir_venda",
+          "nome": "Fechamento Assumindo a Venda",
+          "categoria": "fechamento",
+          "prioridade": "alta",
+          "descricao": "Fechamento direto assumindo que o cliente já decidiu comprar",
+          "contexto_educativo": "O fechamento assumindo a venda é uma técnica poderosa que funciona quando o cliente demonstrou interesse claro. O vendedor age como se a venda já estivesse fechada, direcionando para detalhes práticos da implementação.",
+          "keywords": [
+            "fechamento",
+            "assumir",
+            "venda",
+            "direto",
+            "implementacao"
+          ],
+          "stages": [
+            "confirmacao",
+            "detalhes",
+            "fechamento"
+          ],
+          "objetivo": "Fechar a venda assumindo que o cliente já decidiu",
+          "guidance": "Use quando o cliente demonstrou interesse claro. Aja como se a venda já estivesse fechada e direcione para detalhes práticos.",
+          "questions": [
+            "Perfeito! Qual horário funciona melhor para você começar?",
+            "Prefere pagamento mensal ou trimestral?",
+            "Quer que eu prepare o contrato agora?"
+          ],
+          "objections": {
+            "Ainda não decidi": "Entendo. Vamos resolver as últimas dúvidas. O que te impede de decidir agora?",
+            "Preciso pensar": "Claro! Mas já que você gostou da proposta, que tal começarmos com um período de teste?"
+          },
+          "success_metrics": [
+            "Cliente aceita assumir a venda",
+            "Detalhes práticos definidos",
+            "Contrato assinado"
+          ],
+          "scripts": {
+            "framing": "Perfeito, [Nome]! Vamos fechar isso agora.",
+            "opening": "Perfeito, [Nome]! Vamos fechar isso agora.",
+            "confirmacao": "Qual horário funciona melhor para você começar?",
+            "detalhes": "Prefere pagamento mensal ou trimestral?",
+            "fechamento": "Quer que eu prepare o contrato agora?",
+            "cta": "Vamos começar na segunda-feira?"
+          },
+          "acoes_praticas": [
+            "Preparar contrato imediatamente",
+            "Definir data de início",
+            "Confirmar forma de pagamento"
+          ]
+        },
+        {
+          "id": "fechamento_alternativa",
+          "nome": "Fechamento por Alternativa",
+          "categoria": "fechamento",
+          "prioridade": "alta",
+          "descricao": "Fechamento oferecendo duas opções para o cliente escolher",
+          "contexto_educativo": "O fechamento por alternativa funciona porque o cliente foca em escolher entre opções, não em comprar ou não comprar. As duas opções devem ser vantajosas para a UFIT.",
+          "keywords": [
+            "alternativa",
+            "opcoes",
+            "escolha",
+            "fechamento",
+            "duas opcoes"
+          ],
+          "stages": [
+            "opcoes",
+            "escolha",
+            "fechamento"
+          ],
+          "objetivo": "Fechar oferecendo duas opções para o cliente escolher",
+          "guidance": "Ofereça duas opções vantajosas para a UFIT. O cliente foca em escolher, não em comprar ou não comprar.",
+          "questions": [
+            "Qual você prefere: começar na segunda ou na quarta?",
+            "Prefere o plano mensal ou trimestral?",
+            "Quer pagar à vista ou parcelado?"
+          ],
+          "objections": {
+            "Não quero nenhuma": "Entendo. Qual das duas opções te deixa mais confortável?",
+            "Preciso pensar": "Claro! Mas entre as duas, qual faz mais sentido para você?"
+          },
+          "success_metrics": [
+            "Cliente escolhe uma das opções",
+            "Detalhes da opção definidos",
+            "Venda fechada"
+          ],
+          "scripts": {
+            "framing": "Temos duas opções perfeitas para você, [Nome].",
+            "opening": "Temos duas opções perfeitas para você, [Nome].",
+            "opcoes": "Qual você prefere: começar na segunda ou na quarta?",
+            "escolha": "Prefere o plano mensal ou trimestral?",
+            "fechamento": "Quer pagar à vista ou parcelado?",
+            "cta": "Qual das duas opções faz mais sentido para você?"
+          },
+          "acoes_praticas": [
+            "Apresentar duas opções claras",
+            "Facilitar a escolha do cliente",
+            "Fechar com a opção escolhida"
+          ]
+        },
+        {
+          "id": "fechamento_urgencia",
+          "nome": "Fechamento por Urgência",
+          "categoria": "fechamento",
+          "prioridade": "alta",
+          "descricao": "Fechamento criando senso de urgência para acelerar a decisão",
+          "contexto_educativo": "O fechamento por urgência funciona quando há uma oferta limitada ou benefício que expira. É importante que a urgência seja real e benéfica para o cliente.",
+          "keywords": [
+            "urgencia",
+            "limitado",
+            "oferta",
+            "expira",
+            "pressao"
+          ],
+          "stages": [
+            "urgencia",
+            "beneficio",
+            "fechamento"
+          ],
+          "objetivo": "Fechar criando senso de urgência real",
+          "guidance": "Crie urgência real e benéfica para o cliente. Não invente pressão artificial.",
+          "questions": [
+            "Essa promoção termina hoje. Quer aproveitar?",
+            "Só temos 3 vagas restantes. Vamos garantir a sua?",
+            "O desconto expira em 2 horas. Vamos fechar agora?"
+          ],
+          "objections": {
+            "Não acredito": "Entendo sua desconfiança. Posso te mostrar a promoção no site?",
+            "Não tenho pressa": "Entendo. Mas você perderia essa oportunidade única?"
+          },
+          "success_metrics": [
+            "Urgência aceita pelo cliente",
+            "Benefício da urgência destacado",
+            "Venda fechada rapidamente"
+          ],
+          "scripts": {
+            "framing": "Temos uma oportunidade única para você, [Nome].",
+            "opening": "Temos uma oportunidade única para você, [Nome].",
+            "urgencia": "Essa promoção termina hoje. Quer aproveitar?",
+            "beneficio": "Só temos 3 vagas restantes. Vamos garantir a sua?",
+            "fechamento": "O desconto expira em 2 horas. Vamos fechar agora?",
+            "cta": "Vamos garantir sua vaga agora?"
+          },
+          "acoes_praticas": [
+            "Criar urgência real e benéfica",
+            "Destacar benefícios da oferta",
+            "Fechar rapidamente"
+          ]
+        },
+        {
+          "id": "fechamento_beneficio",
+          "nome": "Fechamento por Benefício",
+          "categoria": "fechamento",
+          "prioridade": "alta",
+          "descricao": "Fechamento focando nos benefícios específicos para o cliente",
+          "contexto_educativo": "O fechamento por benefício conecta diretamente o que o cliente quer com o que a UFIT oferece. É importante personalizar os benefícios para cada cliente específico.",
+          "keywords": [
+            "beneficio",
+            "personalizado",
+            "cliente",
+            "especifico",
+            "conexao"
+          ],
+          "stages": [
+            "beneficio",
+            "conexao",
+            "fechamento"
+          ],
+          "objetivo": "Fechar conectando benefícios específicos às necessidades do cliente",
+          "guidance": "Conecte diretamente o que o cliente quer com o que a UFIT oferece. Personalize os benefícios para cada cliente.",
+          "questions": [
+            "Você quer emagrecer 10kg em 3 meses, certo?",
+            "O FitSlim é perfeito para seu objetivo. Vamos começar?",
+            "Que tal garantirmos esse resultado para você?"
+          ],
+          "objections": {
+            "Não tenho certeza": "Entendo. Mas você quer emagrecer 10kg, certo? O FitSlim é a melhor forma.",
+            "Preciso pensar": "Claro! Mas já que você quer esse resultado, por que não começar agora?"
+          },
+          "success_metrics": [
+            "Benefício específico identificado",
+            "Conexão clara com necessidade do cliente",
+            "Venda fechada"
+          ],
+          "scripts": {
+            "framing": "Você quer emagrecer 10kg em 3 meses, certo?",
+            "opening": "Você quer emagrecer 10kg em 3 meses, certo?",
+            "beneficio": "O FitSlim é perfeito para seu objetivo. Vamos começar?",
+            "conexao": "Que tal garantirmos esse resultado para você?",
+            "fechamento": "Vamos começar na segunda-feira?",
+            "cta": "Vamos garantir seu resultado?"
+          },
+          "acoes_praticas": [
+            "Identificar benefício específico do cliente",
+            "Conectar benefício à solução UFIT",
+            "Fechar com foco no resultado"
+          ]
+        },
+        {
+          "id": "fechamento_objetivo",
+          "nome": "Fechamento por Objetivo",
+          "categoria": "fechamento",
+          "prioridade": "alta",
+          "descricao": "Fechamento lembrando o cliente do seu objetivo original",
+          "contexto_educativo": "O fechamento por objetivo funciona porque reconecta o cliente com sua motivação inicial. É importante relembrar o objetivo de forma emocional e concreta.",
+          "keywords": [
+            "objetivo",
+            "motivacao",
+            "lembrar",
+            "reconectar",
+            "emocional"
+          ],
+          "stages": [
+            "objetivo",
+            "motivacao",
+            "fechamento"
+          ],
+          "objetivo": "Fechar reconectando o cliente com seu objetivo original",
+          "guidance": "Relembre o objetivo de forma emocional e concreta. Reconecte o cliente com sua motivação inicial.",
+          "questions": [
+            "Lembra que você quer estar bem no casamento da sua filha?",
+            "Esse é seu objetivo, certo? Vamos garantir que você consiga?",
+            "Que tal começarmos hoje para você estar linda no casamento?"
+          ],
+          "objections": {
+            "Não tenho mais pressa": "Entendo. Mas o casamento da sua filha é em 3 meses, certo?",
+            "Preciso pensar": "Claro! Mas você quer estar linda no casamento, certo? Vamos começar?"
+          },
+          "success_metrics": [
+            "Objetivo original relembrado",
+            "Motivação reconectada",
+            "Venda fechada"
+          ],
+          "scripts": {
+            "framing": "Lembra que você quer estar bem no casamento da sua filha?",
+            "opening": "Lembra que você quer estar bem no casamento da sua filha?",
+            "objetivo": "Esse é seu objetivo, certo? Vamos garantir que você consiga?",
+            "motivacao": "Que tal começarmos hoje para você estar linda no casamento?",
+            "fechamento": "Vamos começar na segunda-feira?",
+            "cta": "Vamos garantir seu objetivo?"
+          },
+          "acoes_praticas": [
+            "Relembrar objetivo original do cliente",
+            "Reconectar com motivação emocional",
+            "Fechar com foco no objetivo"
+          ]
+        },
+        {
+          "id": "fechamento_medo_perda",
+          "nome": "Fechamento por Medo de Perda",
+          "categoria": "fechamento",
+          "prioridade": "media",
+          "descricao": "Fechamento destacando o que o cliente pode perder se não decidir",
+          "contexto_educativo": "O fechamento por medo de perda funciona quando o cliente entende o custo de não agir. É importante ser respeitoso e focar em benefícios perdidos, não em pressão negativa.",
+          "keywords": [
+            "medo",
+            "perda",
+            "custo",
+            "nao agir",
+            "oportunidade"
+          ],
+          "stages": [
+            "custo",
+            "perda",
+            "fechamento"
+          ],
+          "objetivo": "Fechar destacando o custo de não decidir",
+          "guidance": "Seja respeitoso e foque em benefícios perdidos, não em pressão negativa. Mostre o custo de não agir.",
+          "questions": [
+            "O que acontece se você não começar agora?",
+            "Quanto tempo você já perdeu sem resultados?",
+            "Vale a pena continuar adiando seu objetivo?"
+          ],
+          "objections": {
+            "Não tenho pressa": "Entendo. Mas quanto tempo você já perdeu sem resultados?",
+            "Preciso pensar": "Claro! Mas quanto tempo você já perdeu sem resultados?"
+          },
+          "success_metrics": [
+            "Custo de não agir identificado",
+            "Benefícios perdidos destacados",
+            "Venda fechada"
+          ],
+          "scripts": {
+            "framing": "O que acontece se você não começar agora?",
+            "opening": "O que acontece se você não começar agora?",
+            "custo": "Quanto tempo você já perdeu sem resultados?",
+            "perda": "Vale a pena continuar adiando seu objetivo?",
+            "fechamento": "Vamos começar hoje para não perder mais tempo?",
+            "cta": "Vamos garantir seu resultado agora?"
+          },
+          "acoes_praticas": [
+            "Identificar custo de não agir",
+            "Destacar benefícios perdidos",
+            "Fechar com foco na ação imediata"
+          ]
+        },
+        {
+          "id": "fechamento_silencioso",
+          "nome": "Fechamento Silencioso",
+          "categoria": "fechamento",
+          "prioridade": "media",
+          "descrição": "Fechamento usando silêncio estratégico para pressionar o cliente",
+          "contexto_educativo": "O fechamento silencioso funciona porque o silêncio cria pressão psicológica natural. O cliente se sente compelido a preencher o silêncio, geralmente com uma decisão positiva.",
+          "keywords": [
+            "silêncio",
+            "pressão",
+            "psicológica",
+            "estratégico",
+            "natural"
+          ],
+          "stages": [
+            "proposta",
+            "silêncio",
+            "fechamento"
+          ],
+          "objetivo": "Fechar usando silêncio estratégico para pressionar o cliente",
+          "guidance": "Use silêncio estratégico após fazer a proposta. O cliente se sente compelido a preencher o silêncio com uma decisão.",
+          "questions": [
+            "Então, vamos fechar isso agora?",
+            "Qual horário funciona melhor para você?",
+            "Vamos começar na segunda-feira?"
+          ],
+          "objections": {
+            "Não tenho certeza": "Entendo. Vamos resolver suas dúvidas. O que te impede de decidir?",
+            "Preciso pensar": "Claro! Mas já que você gostou da proposta, que tal começarmos?"
+          },
+          "success_metrics": [
+            "Silêncio estratégico aplicado",
+            "Cliente responde ao silêncio",
+            "Venda fechada"
+          ],
+          "scripts": {
+            "framing": "Então, vamos fechar isso agora?",
+            "opening": "Então, vamos fechar isso agora?",
+            "proposta": "Qual horário funciona melhor para você?",
+            "silêncio": "[Aguardar resposta do cliente]",
+            "fechamento": "Vamos começar na segunda-feira?",
+            "cta": "Vamos fechar isso agora?"
+          },
+          "acoes_praticas": [
+            "Fazer proposta clara",
+            "Aplicar silêncio estratégico",
+            "Aguardar resposta do cliente"
+          ]
+        },
+        {
+          "id": "fechamento_ultima_objeção",
+          "nome": "Fechamento da Última Objeção",
+          "categoria": "fechamento",
+          "prioridade": "alta",
+          "descrição": "Fechamento após resolver a última objeção do cliente",
+          "contexto_educativo": "O fechamento da última objeção funciona quando o cliente já demonstrou interesse e só tem uma dúvida restante. É importante resolver completamente a objeção antes de fechar.",
+          "keywords": [
+            "última objeção",
+            "resolver",
+            "dúvida",
+            "final",
+            "completo"
+          ],
+          "stages": [
+            "objeção",
+            "resolução",
+            "fechamento"
+          ],
+          "objetivo": "Fechar após resolver completamente a última objeção",
+          "guidance": "Resolva completamente a objeção antes de fechar. O cliente deve estar 100% satisfeito com a resposta.",
+          "questions": [
+            "Resolvemos sua dúvida sobre o preço?",
+            "Agora que esclarecemos isso, vamos fechar?",
+            "Tem mais alguma dúvida antes de começarmos?"
+          ],
+          "objections": {
+            "Ainda tenho dúvidas": "Claro! Vamos resolver todas. Qual sua próxima dúvida?",
+            "Preciso pensar": "Entendo. Mas já resolvemos sua principal dúvida, certo?"
+          },
+          "success_metrics": [
+            "Última objeção resolvida",
+            "Cliente satisfeito com resposta",
+            "Venda fechada"
+          ],
+          "scripts": {
+            "framing": "Resolvemos sua dúvida sobre o preço?",
+            "opening": "Resolvemos sua dúvida sobre o preço?",
+            "objeção": "Agora que esclarecemos isso, vamos fechar?",
+            "resolução": "Tem mais alguma dúvida antes de começarmos?",
+            "fechamento": "Vamos começar na segunda-feira?",
+            "cta": "Vamos fechar isso agora?"
+          },
+          "acoes_praticas": [
+            "Identificar última objeção",
+            "Resolver completamente a objeção",
+            "Fechar imediatamente após resolução"
+          ]
+        },
+        {
+          "id": "fechamento_agendamento",
+          "nome": "Fechamento por Agendamento",
+          "categoria": "fechamento",
+          "prioridade": "alta",
+          "descrição": "Fechamento agendando a próxima etapa como se a venda já estivesse fechada",
+          "contexto_educativo": "O fechamento por agendamento funciona porque o cliente se compromete com uma próxima ação, efetivamente fechando a venda. É importante agendar algo concreto e específico.",
+          "keywords": [
+            "agendamento",
+            "próxima etapa",
+            "compromisso",
+            "ação",
+            "concreto"
+          ],
+          "stages": [
+            "agendamento",
+            "compromisso",
+            "fechamento"
+          ],
+          "objetivo": "Fechar agendando a próxima etapa como se a venda já estivesse fechada",
+          "guidance": "Agende algo concreto e específico. O cliente se compromete com uma próxima ação, efetivamente fechando a venda.",
+          "questions": [
+            "Que tal agendarmos sua primeira aula para segunda-feira?",
+            "Prefere manhã ou tarde para começar?",
+            "Vamos marcar para as 9h da manhã?"
+          ],
+          "objections": {
+            "Ainda não decidi": "Entendo. Mas já que você gostou da proposta, que tal agendarmos?",
+            "Preciso pensar": "Claro! Mas já que você gostou, que tal agendarmos?"
+          },
+          "success_metrics": [
+            "Próxima etapa agendada",
+            "Compromisso específico definido",
+            "Venda fechada"
+          ],
+          "scripts": {
+            "framing": "Que tal agendarmos sua primeira aula para segunda-feira?",
+            "opening": "Que tal agendarmos sua primeira aula para segunda-feira?",
+            "agendamento": "Prefere manhã ou tarde para começar?",
+            "compromisso": "Vamos marcar para as 9h da manhã?",
+            "fechamento": "Perfeito! Vamos começar na segunda-feira às 9h.",
+            "cta": "Vamos agendar isso agora?"
+          },
+          "acoes_praticas": [
+            "Agendar próxima etapa específica",
+            "Definir compromisso concreto",
+            "Confirmar agendamento"
+          ]
+        }
+      ]
+    }
+  }
+}
