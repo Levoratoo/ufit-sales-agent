@@ -44,11 +44,13 @@ class SalesConsultantAgent:
         best_practices: List[str],
         tone: str,
         fallback_message: str,
+        custom_responses: Optional[Dict] = None,
     ) -> None:
         self.scenarios = list(scenarios)
         self.best_practices = best_practices
         self.tone = tone
         self.fallback_message = fallback_message
+        self.custom_responses = custom_responses or {}
 
     @classmethod
     def from_file(cls, path: str | Path) -> "SalesConsultantAgent":
@@ -76,9 +78,21 @@ class SalesConsultantAgent:
         ]
 
         if not scenarios:
-            raise ValueError("Arquivo de conhecimento deve conter ao menos um scenario.")
+            raise ValueError(
+                "Arquivo de conhecimento deve conter ao menos um scenario.")
 
-        return cls(scenarios=scenarios, best_practices=best_practices, tone=tone, fallback_message=fallback)
+        # Carregar respostas customizadas
+        custom_responses = {}
+        custom_file = Path("custom_responses.json")
+        if custom_file.exists():
+            try:
+                with open(custom_file, 'r', encoding='utf-8') as f:
+                    custom_data = json.load(f)
+                    custom_responses = custom_data.get("custom_responses", {})
+            except Exception:
+                pass
+
+        return cls(scenarios=scenarios, best_practices=best_practices, tone=tone, fallback_message=fallback, custom_responses=custom_responses)
 
     @classmethod
     def from_yaml(cls, path: str | Path) -> "SalesConsultantAgent":  # backward compatible alias
@@ -92,6 +106,11 @@ class SalesConsultantAgent:
     ) -> str:
         """Produces a textual set of recommendations for the seller."""
 
+        # Primeiro verifica respostas customizadas
+        custom_response = self._check_custom_responses(query)
+        if custom_response:
+            return custom_response
+
         scenario = self._select_scenario(query, stage)
         if not scenario:
             return self.fallback_message
@@ -100,23 +119,41 @@ class SalesConsultantAgent:
         blocks.append(self._format_header(scenario))
         blocks.append(self._format_guidance(scenario, extra_context))
         if scenario.questions:
-            blocks.append(self._format_list("Perguntas de sondagem sugeridas", scenario.questions))
+            blocks.append(self._format_list(
+                "Perguntas de sondagem sugeridas", scenario.questions))
         if scenario.objections:
             objection_lines = [
                 f"{name}: {reply}" for name, reply in scenario.objections.items()
             ]
-            blocks.append(self._format_list("Respostas para objecoes provaveis", objection_lines))
+            blocks.append(self._format_list(
+                "Respostas para objecoes provaveis", objection_lines))
         if scenario.success_metrics:
-            blocks.append(self._format_list("Indicadores para acompanhar", scenario.success_metrics))
+            blocks.append(self._format_list(
+                "Indicadores para acompanhar", scenario.success_metrics))
         if self.best_practices:
-            blocks.append(self._format_list("Boas praticas UFIT", self.best_praticas_contextual()))
-        
+            blocks.append(self._format_list("Boas praticas UFIT",
+                          self.best_praticas_contextual()))
+
         return "\n\n".join(blocks)
 
     def best_praticas_contextual(self) -> List[str]:
         """Returns best practices already aligned with the UFIT tone."""
 
         return [f"{practice} (tom: {self.tone})" for practice in self.best_practices]
+
+    def _check_custom_responses(self, query: str) -> Optional[str]:
+        """Check if query matches any custom responses."""
+        if not self.custom_responses:
+            return None
+            
+        normalized_query = query.lower()
+        
+        for response_key, response_data in self.custom_responses.items():
+            keywords = response_data.get("keywords", [])
+            if any(keyword in normalized_query for keyword in keywords):
+                return response_data.get("response", "")
+        
+        return None
 
     def _select_scenario(self, query: str, stage: Optional[str]) -> Optional[SalesScenario]:
         if not query.strip():

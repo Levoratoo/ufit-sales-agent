@@ -1,0 +1,16 @@
+{
+  "custom_responses": {
+    "academia suja": {
+      "keywords": ["suja", "reclamações", "limpeza", "higiene", "academia"],
+      "response": "Entendo a preocupação do cliente com a limpeza. Isso é fundamental para a experiência na UFIT. Vamos abordar assim:\n\n**Resposta sugerida:**\n'Entendo perfeitamente sua preocupação, [Nome]. A limpeza e higiene são prioridades absolutas na UFIT Morretes. Temos um protocolo rigoroso de sanitização com produtos hospitalares, limpeza a cada 2 horas e equipe dedicada. Posso te mostrar nosso processo de limpeza na visita? Isso vai te tranquilizar sobre nossos padrões de qualidade.'\n\n**Ações práticas:**\n- Agende visita para mostrar protocolos de limpeza\n- Apresente certificações de higiene\n- Convide para conhecer a estrutura de limpeza\n- Ofereça aula experimental para vivenciar o ambiente"
+    },
+    "preço alto": {
+      "keywords": ["caro", "preço", "valor", "dinheiro", "custo"],
+      "response": "Objeção de preço é comum e esperada. Vamos trabalhar o valor:\n\n**Resposta sugerida:**\n'Entendo, [Nome]. O investimento em saúde é sempre uma decisão importante. Vamos pensar diferente: quanto você gasta por mês com delivery, cafezinho ou entretenimento? O plano UFIT custa menos que isso e te dá saúde, energia e autoestima. É investimento, não gasto.'\n\n**Estratégias:**\n- Quebre o valor em custo diário\n- Compare com outros gastos mensais\n- Destaque o ROI em saúde e bem-estar\n- Ofereça planos de pagamento flexíveis"
+    },
+    "sem tempo": {
+      "keywords": ["tempo", "corrida", "ocupado", "rotina", "horário"],
+      "response": "Rotina corrida é realidade de muitos clientes. Vamos mostrar flexibilidade:\n\n**Resposta sugerida:**\n'[Nome], entendo perfeitamente! Por isso a UFIT tem horários das 5h às 23h e treinos de apenas 30 minutos. Você pode treinar antes do trabalho, na hora do almoço ou à noite. Temos até treinos online para dias super corridos. Qual horário funcionaria melhor para você?'\n\n**Soluções:**\n- Treinos de 30 minutos\n- Horários flexíveis (5h-23h)\n- Treinos online\n- Personalização de horários"
+    }
+  }
+}
