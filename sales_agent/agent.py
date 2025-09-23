@@ -113,7 +113,7 @@ class SalesConsultantAgent:
 
         scenario = self._select_scenario(query, stage)
         if not scenario:
-            return self.fallback_message
+            return self._generate_intelligent_fallback(query)
 
         blocks: List[str] = []
         blocks.append(self._format_header(scenario))
@@ -148,12 +148,125 @@ class SalesConsultantAgent:
             
         normalized_query = query.lower()
         
+        # Busca exata por palavras-chave
         for response_key, response_data in self.custom_responses.items():
             keywords = response_data.get("keywords", [])
             if any(keyword in normalized_query for keyword in keywords):
                 return response_data.get("response", "")
         
+        # Busca por similaridade (palavras parciais)
+        for response_key, response_data in self.custom_responses.items():
+            keywords = response_data.get("keywords", [])
+            for keyword in keywords:
+                if len(keyword) > 3 and keyword in normalized_query:
+                    return response_data.get("response", "")
+        
         return None
+
+    def _generate_intelligent_fallback(self, query: str) -> str:
+        """Generate an intelligent response for unknown queries."""
+        normalized_query = query.lower()
+        
+        # Detectar tipo de situação baseado em palavras-chave
+        if any(word in normalized_query for word in ["problema", "reclamação", "erro", "confusão", "divergência"]):
+            return self._handle_problem_situation(query)
+        elif any(word in normalized_query for word in ["preço", "caro", "valor", "dinheiro"]):
+            return self._handle_price_objection(query)
+        elif any(word in normalized_query for word in ["tempo", "corrida", "ocupado", "horário"]):
+            return self._handle_time_objection(query)
+        elif any(word in normalized_query for word in ["não gosta", "medo", "ansiedade", "nervoso"]):
+            return self._handle_comfort_objection(query)
+        else:
+            return self._handle_general_situation(query)
+
+    def _handle_problem_situation(self, query: str) -> str:
+        return """🚨 **Situação de Problema/Reclamação**
+
+**Abordagem sugerida:**
+1. **Reconheça imediatamente** a preocupação do cliente
+2. **Peça desculpas** se for erro da UFIT
+3. **Seja transparente** sobre a situação real
+4. **Ofereça soluções** concretas
+5. **Compense** se necessário
+
+**Script base:**
+'[Nome], entendo sua preocupação e peço desculpas por essa situação. Vamos resolver isso juntos. [Explicar a realidade] Posso te mostrar como funciona na prática? Vamos encontrar uma solução que funcione para você.'
+
+**Próximos passos:**
+- Agende visita para mostrar a realidade
+- Ofereça benefício adicional como compensação
+- Documente para correção interna"""
+
+    def _handle_price_objection(self, query: str) -> str:
+        return """💰 **Objeção de Preço**
+
+**Estratégia de valor:**
+1. **Reconheça** a preocupação
+2. **Quebre o valor** em custo diário
+3. **Compare** com outros gastos
+4. **Destaque ROI** em saúde
+5. **Ofereça** flexibilidade
+
+**Script base:**
+'[Nome], entendo sua preocupação com o investimento. Vamos pensar diferente: o plano custa menos que [exemplo: 2 cafés por dia] e te dá saúde, energia e autoestima. É investimento, não gasto. Posso te mostrar planos flexíveis?'
+
+**Ferramentas:**
+- Calculadora de custo diário
+- Comparação com outros gastos
+- Planos de pagamento flexíveis"""
+
+    def _handle_time_objection(self, query: str) -> str:
+        return """⏰ **Objeção de Tempo**
+
+**Soluções de flexibilidade:**
+1. **Horários ampliados** (5h-23h)
+2. **Treinos de 30 minutos**
+3. **Treinos online**
+4. **Personalização** de horários
+
+**Script base:**
+'[Nome], entendo sua rotina corrida! Por isso a UFIT tem horários das 5h às 23h e treinos de apenas 30 minutos. Temos até treinos online. Qual horário funcionaria melhor para você?'
+
+**Benefícios:**
+- Flexibilidade total de horários
+- Treinos eficientes e rápidos
+- Suporte online para dias corridos"""
+
+    def _handle_comfort_objection(self, query: str) -> str:
+        return """🤗 **Objeção de Conforto/Medo**
+
+**Abordagem empática:**
+1. **Valide** os sentimentos
+2. **Reconheça** que é normal
+3. **Mostre** ambiente acolhedor
+4. **Ofereça** acompanhamento especial
+5. **Garanta** suporte total
+
+**Script base:**
+'[Nome], entendo perfeitamente! Muitos clientes se sentem assim no início. A UFIT tem um ambiente super acolhedor, sem julgamentos, com equipe que te apoia 100%. Posso te mostrar como funciona?'
+
+**Diferenciais:**
+- Ambiente climatizado e acolhedor
+- Equipe especializada em acolhimento
+- Acompanhamento personalizado"""
+
+    def _handle_general_situation(self, query: str) -> str:
+        return f"""🤔 **Situação: {query[:50]}...**
+
+**Abordagem consultiva:**
+1. **Escute ativamente** a preocupação
+2. **Faça perguntas** para entender melhor
+3. **Conecte** com necessidades reais
+4. **Apresente** soluções UFIT
+5. **Feche** com próximo passo
+
+**Script base:**
+'[Nome], entendo sua situação. Para te ajudar melhor, me conta mais sobre [aspecto específico]? Assim posso te mostrar como a UFIT pode resolver isso para você.'
+
+**Próximos passos:**
+- Agende visita para diagnóstico completo
+- Apresente soluções personalizadas
+- Ofereça aula experimental"""
 
     def _select_scenario(self, query: str, stage: Optional[str]) -> Optional[SalesScenario]:
         if not query.strip():
