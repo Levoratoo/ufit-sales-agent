@@ -1,0 +1,12 @@
+# UFIT Sales Agent - Dependências Python
+
+# Dependências principais
+# (Nenhuma dependência externa necessária - usa apenas bibliotecas padrão do Python)
+
+# Dependências opcionais para suporte a YAML
+PyYAML>=6.0
+
+# Para desenvolvimento e testes (opcional)
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0

@@ -1,0 +1,32 @@
+{
+  "company": "UFIT",
+  "tone": "consultivo",
+  "best_practices": [
+    "Mantenha foco na transformacao de saude e energia do cliente.",
+    "Use perguntas abertas antes de propor planos.",
+    "Reforce autoridade citando cases locais da UFIT.",
+    "Combine urgencia com empatia, propondo primeiros passos praticos."
+  ],
+  "fallback_message": "Ainda estou estruturando uma resposta para o caso. Consulte o lider comercial da UFIT ou compartilhe mais detalhes para receber orientacao mais precisa.",
+  "scenarios": [
+    {
+      "name": "Exemplo de Cenário",
+      "description": "Descrição do cenário de venda.",
+      "keywords": ["palavra-chave1", "palavra-chave2", "palavra-chave3"],
+      "stages": ["prospeccao", "fechamento"],
+      "guidance": "Orientações específicas para este cenário.",
+      "questions": [
+        "Pergunta de sondagem 1?",
+        "Pergunta de sondagem 2?"
+      ],
+      "objections": {
+        "Objeção comum": "Resposta para a objeção.",
+        "Outra objeção": "Outra resposta."
+      },
+      "success_metrics": [
+        "Métrica de sucesso 1",
+        "Métrica de sucesso 2"
+      ]
+    }
+  ]
+}

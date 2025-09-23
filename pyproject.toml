@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ufit-sales-agent"
+version = "1.0.0"
+description = "Agente de vendas inteligente para UFIT com sistema de aprovação automática"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "UFIT Team", email = "dev@ufit.com"},
+]
+keywords = ["sales", "ai", "agent", "ufit", "vendas", "consultivo"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Sales/Marketing",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Sales",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+    "mypy>=0.991",
+]
+yaml = [
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+ufit-sales-agent = "main:main"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

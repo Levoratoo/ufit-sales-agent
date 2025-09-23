@@ -1,0 +1,86 @@
+﻿company: UFIT
+tone: consultivo
+
+best_practices:
+  - Mantenha foco na transformacao de saude e energia do cliente.
+  - Use perguntas abertas antes de propor planos.
+  - Reforce autoridade citando cases locais da UFIT.
+  - Combine urgencia com empatia, propondo primeiros passos praticos.
+
+fallback_message: >-
+  Ainda estou estruturando uma resposta para o caso. Consulte o lider comercial da UFIT ou
+  compartilhe mais detalhes para receber orientacao mais precisa.
+
+scenarios:
+  - name: Cliente indeciso no fechamento
+    description: Cliente gostou mas quer pensar mais antes de fechar.
+    keywords: [fechamento, indeciso, pensar, semana que vem, depois]
+    stages: [fechamento, follow_up]
+    guidance: >-
+      Reforce o valor principal alinhado ao objetivo do cliente e ofereca uma
+      condicao tatica ou beneficio adicional com prazo claro. Sugira um acordo de
+      compromisso leve, como agendar a primeira avaliacao ou uma sessao teste ainda
+      esta semana.
+    questions:
+      - Qual foi o principal objetivo que voce comentou na avaliacao?
+      - O que te ajudaria a sentir seguranca para comecarmos agora?
+    objections:
+      Preciso pensar: Reforce beneficios conquistados por clientes similares e convide para uma sessao teste gratuita nas proximas 48h.
+      Sem tempo: Ofereca planos com treinos rapidos e suporte online para encaixar na rotina.
+    success_metrics:
+      - Agendar sessao teste
+      - Registrar follow up com data marcada
+
+  - name: Cliente sensivel a preco
+    description: Prospect acha o plano UFIT caro em comparacao ao concorrente.
+    keywords: [preco, caro, valor, desconto, concorrente]
+    stages: [diagnostico, proposta, fechamento]
+    guidance: >-
+      Conecte o preco ao plano de resultados concretos. Traga comparacoes de custo
+      beneficio, destacando nutricional, acompanhamento e tecnologia UFIT.
+      Se necessario, ofereca parcelamento e mencione planos flexiveis.
+    questions:
+      - Em qual resultado voce quer ver retorno primeiro?
+      - Se este resultado chegar em 90 dias, quanto isso vale para voce?
+    objections:
+      Muito caro: Quebre o valor em custo semanal e destaque diferenciais exclusivos.
+      Concorrente mais barato: Mostre evidencias de resultados e suporte continuo da equipe UFIT.
+    success_metrics:
+      - Apresentar quadro comparativo de valor
+      - Garantir envio de proposta com resumo dos diferenciais
+
+  - name: Proposta corporativa para RH
+    description: Contato representa empresa interessada em planos corporativos.
+    keywords: [empresa, rh, corporativo, equipe, colaborador]
+    stages: [prospeccao, diagnostico, proposta]
+    guidance: >-
+      Foque na reducao de absenteismo, produtividade e employer branding. Apresente
+      pacote modular com onboarding presencial e relatorios mensais. Combine pilotos
+      de 60 dias para squads chave.
+    questions:
+      - Quantos colaboradores fazem parte do escopo inicial?
+      - Quais indicadores de saude ou engajamento voce acompanha hoje?
+    objections:
+      Time sem aderencia: Sugira desafio gamificado e reports quinzenais para RH.
+      Nao temos budget completo: Ofereca piloto com coparticipacao e metas de renovacao.
+    success_metrics:
+      - Enviar proposta com plano de piloto
+      - Agendar reuniao de decisao com RH e gestor financeiro
+
+  - name: Reengajar ex-cliente UFIT
+    description: Cliente que ja cancelou e voltou a demonstrar interesse.
+    keywords: [voltar, retomar, cancelou, ex cliente, antiga]
+    stages: [nutricao, reengajamento]
+    guidance: >-
+      Reconheca o historico e valide os motivos da saida anterior. Mostre evolucoes
+      na estrutura UFIT desde entao e ofereca plano personalizado com primeira
+      semana monitorada pelo consultor senior.
+    questions:
+      - O que te levou a pausar conosco naquele periodo?
+      - O que precisa ser diferente agora para ter sucesso?
+    objections:
+      Tenho receio de cair na mesma rotina: Envolva treinador senior e plano de metas micro.
+      Ja estou em outra academia: Reforce proposta hibrida com acompanhamento UFIT + treinos externos.
+    success_metrics:
+      - Registrar metas personalizadas na primeira sessao
+      - Agendar contato de revisao na semana 2
