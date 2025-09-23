@@ -145,28 +145,28 @@ class SalesConsultantAgent:
         """Check if query matches any custom responses."""
         if not self.custom_responses:
             return None
-            
+
         normalized_query = query.lower()
-        
+
         # Busca exata por palavras-chave
         for response_key, response_data in self.custom_responses.items():
             keywords = response_data.get("keywords", [])
             if any(keyword in normalized_query for keyword in keywords):
                 return response_data.get("response", "")
-        
+
         # Busca por similaridade (palavras parciais)
         for response_key, response_data in self.custom_responses.items():
             keywords = response_data.get("keywords", [])
             for keyword in keywords:
                 if len(keyword) > 3 and keyword in normalized_query:
                     return response_data.get("response", "")
-        
+
         return None
 
     def _generate_intelligent_fallback(self, query: str) -> str:
         """Generate an intelligent response for unknown queries."""
         normalized_query = query.lower()
-        
+
         # Detectar tipo de situação baseado em palavras-chave
         if any(word in normalized_query for word in ["problema", "reclamação", "erro", "confusão", "divergência"]):
             return self._handle_problem_situation(query)

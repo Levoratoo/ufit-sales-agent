@@ -13,8 +13,16 @@
     {
       "name": "Acolhimento caloroso",
       "description": "Primeiro contato com o prospect para criar rapport e entender motivacoes iniciais.",
-      "keywords": ["acolhimento", "primeiro contato", "inicio", "joao"],
-      "stages": ["acolhimento", "prospeccao"],
+      "keywords": [
+        "acolhimento",
+        "primeiro contato",
+        "inicio",
+        "joao"
+      ],
+      "stages": [
+        "acolhimento",
+        "prospeccao"
+      ],
       "guidance": "Abra a conversa com energia positiva e apresente-se pelo nome. Use a frase guia: 'Oi! Que bom falar com voce :) Eu sou o Joao, consultor da UFit Morretes - Itapema. Me conta, voce esta buscando mais saude, estetica ou melhorar o condicionamento?'. Pergunte o nome do cliente e repita ao longo do dialogo para criar proximidade.",
       "questions": [
         "Qual o seu nome completo para eu te atender da melhor forma?",
@@ -29,8 +37,16 @@
     {
       "name": "Diagnostico consultivo",
       "description": "Explora rotina, objetivos e limitacoes antes de falar em planos.",
-      "keywords": ["diagnostico", "descoberta", "rotina", "objetivos"],
-      "stages": ["diagnostico", "descoberta"],
+      "keywords": [
+        "diagnostico",
+        "descoberta",
+        "rotina",
+        "objetivos"
+      ],
+      "stages": [
+        "diagnostico",
+        "descoberta"
+      ],
       "guidance": "Use perguntas abertas para mapear rotina, frequencia possivel de treinos e desafios. Demonstre escuta ativa e valide cada informacao. Exemplo: 'Legal, [Nome]! E como esta sua rotina hoje? Consegue treinar quantos dias por semana?'.",
       "questions": [
         "Como esta sua rotina atual de treinos ou atividades fisicas?",
@@ -47,8 +63,16 @@
     {
       "name": "Construcao de valor UFIT",
       "description": "Apresenta diferenciais conectados as dores e desejos do cliente.",
-      "keywords": ["construcao de valor", "diferenciais", "historia", "storytelling"],
-      "stages": ["proposta", "construcao_valor"],
+      "keywords": [
+        "construcao de valor",
+        "diferenciais",
+        "historia",
+        "storytelling"
+      ],
+      "stages": [
+        "proposta",
+        "construcao_valor"
+      ],
       "guidance": "Mostre como os recursos da UFIT resolvem as dores citadas. Utilize storytelling: 'Temos um aluno que comecou exatamente com essa dificuldade e hoje...'. Destaque estrutura moderna, horarios flexiveis e acompanhamento proximo.",
       "questions": [
         "Que tipo de suporte faria mais diferenca para voce manter consistencia?",
@@ -63,8 +87,17 @@
     {
       "name": "Oferta de planos e metodologias",
       "description": "Recomendacao personalizada apos o diagnostico.",
-      "keywords": ["oferta", "plano", "fitslim", "fitstrong", "fitquality"],
-      "stages": ["proposta", "oferta"],
+      "keywords": [
+        "oferta",
+        "plano",
+        "fitslim",
+        "fitstrong",
+        "fitquality"
+      ],
+      "stages": [
+        "proposta",
+        "oferta"
+      ],
       "guidance": "Apresente planos apenas depois de validar o diagnostico. Relacione o plano ideal ao objetivo citado: 'Com base no que voce me contou, o FitSlim e ideal pra voce. Assim voce tem acompanhamento proximo e resultados mais rapidos sem sobrecarga.'. Explique rapidamente as vantagens de FitStrong, FitQuality e FitSlim para ancorar valor.",
       "questions": [
         "Faz sentido para voce comecar com acompanhamento mais proximo como no FitSlim?",
@@ -79,8 +112,16 @@
     {
       "name": "Tratamento de objecoes UFIT",
       "description": "Responde a preocupacoes mantendo empatia e reforcando valor.",
-      "keywords": ["objecao", "rotina corrida", "nao gosta de academia", "caro"],
-      "stages": ["fechamento", "tratamento_objecoes"],
+      "keywords": [
+        "objecao",
+        "rotina corrida",
+        "nao gosta de academia",
+        "caro"
+      ],
+      "stages": [
+        "fechamento",
+        "tratamento_objecoes"
+      ],
       "guidance": "Sempre valide a preocupacao e reconstrua valor. Utilize scripts base: 'Entendo, [Nome]! Muitos pensam assim no comeco, mas percebem que o valor e pequeno comparado aos resultados.' ou 'Sua rotina e corrida? Temos treinos rapidos de 30 minutos e horarios das 5h as 23h.'.",
       "questions": [
         "O que mais te preocupa ao iniciar agora?",
@@ -99,8 +140,14 @@
     {
       "name": "Fechamento suave",
       "description": "Conduz o cliente para proximo passo sem pressao.",
-      "keywords": ["fechamento suave", "pergunta de avancoo", "reservar horario"],
-      "stages": ["fechamento"],
+      "keywords": [
+        "fechamento suave",
+        "pergunta de avanco",
+        "reservar horario"
+      ],
+      "stages": [
+        "fechamento"
+      ],
       "guidance": "Convidar o cliente com naturalidade: 'Voce prefere treinar de manha ou a noite?' ou 'Quer que eu reserve um horario para voce conhecer tudo sem compromisso?'. O objetivo e mover para o sim parcial sem pressionar.",
       "questions": [
         "Qual periodo do dia funciona melhor para voce conhecer a unidade?",
@@ -115,8 +162,15 @@
     {
       "name": "Follow up estrategico",
       "description": "Mensagens pos-conversa caso o cliente nao feche na hora.",
-      "keywords": ["follow up", "mensagem", "promocao", "acompanhamento"],
-      "stages": ["follow_up"],
+      "keywords": [
+        "follow up",
+        "mensagem",
+        "promocao",
+        "acompanhamento"
+      ],
+      "stages": [
+        "follow_up"
+      ],
       "guidance": "Envie contato simpatico reforcando relacionamento: 'Oi [Nome]! Gostei muito de te conhecer. Ainda temos a promocao ativa, posso te ajudar a fechar com desconto?'. Feche com tom propositivo e ofereca ajuda adicional.",
       "questions": [
         "Posso te enviar um resumo do que combinamos e a promocao vigente?",
@@ -131,8 +185,17 @@
     {
       "name": "Confirmacao e onboarding",
       "description": "Finaliza quando o cliente aceita aula experimental ou matricula.",
-      "keywords": ["confirmacao", "onboarding", "aula experimental", "agradecimento"],
-      "stages": ["confirmacao", "onboarding", "pos_venda"],
+      "keywords": [
+        "confirmacao",
+        "onboarding",
+        "aula experimental",
+        "agradecimento"
+      ],
+      "stages": [
+        "confirmacao",
+        "onboarding",
+        "pos_venda"
+      ],
       "guidance": "Confirme detalhes e agradeca sem novas vendas: 'Perfeito, [Nome]! Sua aula experimental esta marcada para [dia/hora]. Vamos te esperar na Rua 422, numero 1385 - Morretes, Itapema. Qualquer duvida pode falar comigo por aqui.'.",
       "questions": [
         "Posso confirmar seu contato para eventuais ajustes?",
@@ -148,8 +211,17 @@
     {
       "name": "Cliente indeciso no fechamento",
       "description": "Cliente gostou mas quer pensar mais antes de fechar.",
-      "keywords": ["fechamento", "indeciso", "pensar", "semana que vem", "depois"],
-      "stages": ["fechamento", "follow_up"],
+      "keywords": [
+        "fechamento",
+        "indeciso",
+        "pensar",
+        "semana que vem",
+        "depois"
+      ],
+      "stages": [
+        "fechamento",
+        "follow_up"
+      ],
       "guidance": "Reforce o valor principal alinhado ao objetivo do cliente e ofereca uma condicao tatica ou beneficio adicional com prazo claro. Sugira um acordo de compromisso leve, como agendar a primeira avaliacao ou uma sessao teste ainda esta semana.",
       "questions": [
         "Qual foi o principal objetivo que voce comentou na avaliacao?",
@@ -167,8 +239,18 @@
     {
       "name": "Cliente sensivel a preco",
       "description": "Prospect acha o plano UFIT caro em comparacao ao concorrente.",
-      "keywords": ["preco", "caro", "valor", "desconto", "concorrente"],
-      "stages": ["diagnostico", "proposta", "fechamento"],
+      "keywords": [
+        "preco",
+        "caro",
+        "valor",
+        "desconto",
+        "concorrente"
+      ],
+      "stages": [
+        "diagnostico",
+        "proposta",
+        "fechamento"
+      ],
       "guidance": "Conecte o preco ao plano de resultados concretos. Traga comparacoes de custo beneficio, destacando nutricional, acompanhamento e tecnologia UFIT. Se necessario, ofereca parcelamento e mencione planos flexiveis.",
       "questions": [
         "Em qual resultado voce quer ver retorno primeiro?",
@@ -186,8 +268,18 @@
     {
       "name": "Proposta corporativa para RH",
       "description": "Contato representa empresa interessada em planos corporativos.",
-      "keywords": ["empresa", "rh", "corporativo", "equipe", "colaborador"],
-      "stages": ["prospeccao", "diagnostico", "proposta"],
+      "keywords": [
+        "empresa",
+        "rh",
+        "corporativo",
+        "equipe",
+        "colaborador"
+      ],
+      "stages": [
+        "prospeccao",
+        "diagnostico",
+        "proposta"
+      ],
       "guidance": "Foque na reducao de absenteismo, produtividade e employer branding. Apresente pacote modular com onboarding presencial e relatorios mensais. Combine pilotos de 60 dias para squads chave.",
       "questions": [
         "Quantos colaboradores fazem parte do escopo inicial?",
@@ -205,8 +297,17 @@
     {
       "name": "Reengajar ex-cliente UFIT",
       "description": "Cliente que ja cancelou e voltou a demonstrar interesse.",
-      "keywords": ["voltar", "retomar", "cancelou", "ex cliente", "antiga"],
-      "stages": ["nutricao", "reengajamento"],
+      "keywords": [
+        "voltar",
+        "retomar",
+        "cancelou",
+        "ex cliente",
+        "antiga"
+      ],
+      "stages": [
+        "nutricao",
+        "reengajamento"
+      ],
       "guidance": "Reconheca o historico e valide os motivos da saida anterior. Mostre evolucoes na estrutura UFIT desde entao e ofereca plano personalizado com primeira semana monitorada pelo consultor senior.",
       "questions": [
         "O que te levou a pausar conosco naquele periodo?",
@@ -219,6 +320,94 @@
       "success_metrics": [
         "Registrar metas personalizadas na primeira sessao",
         "Agendar contato de revisao na semana 2"
+      ]
+    },
+    {
+      "name": "Cliente com medo de nao conseguir",
+      "description": "Prospect tem receio de nao ter condicoes fisicas ou disciplina para treinar.",
+      "keywords": [
+        "medo",
+        "nao conseguir",
+        "condicao fisica",
+        "disciplina",
+        "receio"
+      ],
+      "stages": [
+        "diagnostico",
+        "proposta",
+        "fechamento"
+      ],
+      "guidance": "Valide o receio e mostre que a UFIT e o lugar ideal para comecar. Destaque acompanhamento personalizado, progressao gradual e ambiente acolhedor. Use casos de sucesso de pessoas com situacoes similares.",
+      "questions": [
+        "O que especificamente te preocupa em relacao ao treino?",
+        "Ja teve alguma experiencia anterior com academia ou atividade fisica?"
+      ],
+      "objections": {
+        "Nao tenho condicao fisica": "Mostre que comecamos do zero, com acompanhamento total e progressao gradual.",
+        "Nao tenho disciplina": "Destaque o suporte da equipe e a flexibilidade de horarios para manter consistencia."
+      },
+      "success_metrics": [
+        "Cliente se sente confortavel para agendar aula experimental",
+        "Receio especifico registrado para acompanhamento"
+      ]
+    },
+    {
+      "name": "Cliente preocupado com limpeza",
+      "description": "Prospect tem preocupacao com higiene e limpeza da academia.",
+      "keywords": [
+        "limpeza",
+        "higiene",
+        "suja",
+        "reclamacao",
+        "sanitizacao"
+      ],
+      "stages": [
+        "diagnostico",
+        "proposta",
+        "fechamento"
+      ],
+      "guidance": "Destaque os protocolos rigorosos de limpeza da UFIT. Mencione produtos hospitalares, frequencia de sanitizacao e equipe dedicada. Convide para conhecer os processos pessoalmente.",
+      "questions": [
+        "Ja teve alguma experiencia negativa com limpeza em academias?",
+        "O que seria fundamental para voce se sentir segura na academia?"
+      ],
+      "objections": {
+        "Academia suja": "Mostre protocolos de limpeza e convide para visita para ver pessoalmente.",
+        "Receio de contagio": "Destaque produtos hospitalares e frequencia de sanitizacao."
+      },
+      "success_metrics": [
+        "Cliente agenda visita para conhecer protocolos",
+        "Preocupacao com limpeza registrada para follow up"
+      ]
+    },
+    {
+      "name": "Cliente com divergencia de informacoes",
+      "description": "Prospect recebeu informacoes diferentes entre site e consultor sobre servicos ou estrutura.",
+      "keywords": [
+        "divergencia",
+        "site",
+        "promessa",
+        "informacao",
+        "diferente"
+      ],
+      "stages": [
+        "diagnostico",
+        "proposta",
+        "fechamento"
+      ],
+      "guidance": "Reconheca a confusao e peca desculpas. Esclareca a informacao correta e ofereca compensacao ou beneficio adicional. Documente para correcao futura.",
+      "questions": [
+        "Onde voce viu essa informacao que nao confere?",
+        "O que seria justo para compensar essa confusao?"
+      ],
+      "objections": {
+        "Site prometeu area kids": "Reconheca o erro, explique a realidade atual e ofereca alternativa ou beneficio.",
+        "Informacao diferente": "Esclareca a informacao correta e ofereca beneficio adicional."
+      },
+      "success_metrics": [
+        "Informacao correta esclarecida",
+        "Compensacao oferecida e aceita",
+        "Divergencia documentada para correcao"
       ]
     }
   ]
