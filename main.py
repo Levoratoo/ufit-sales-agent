@@ -28,12 +28,6 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Entra em modo de perguntas e respostas continuo",
     )
-    parser.add_argument(
-        "--no-auto-approve",
-        dest="no_auto_approve",
-        action="store_true",
-        help="Desabilita a aprovacao automatica das sessoes",
-    )
     return parser
 
 
@@ -69,12 +63,8 @@ def main() -> None:
     if not kb_path.exists():
         raise SystemExit(f"Arquivo de conhecimento nao encontrado: {kb_path}")
 
-    # Carrega o agente com configuração de aprovação automática
+    # Carrega o agente
     agent = SalesConsultantAgent.from_file(kb_path)
-
-    # Se --no-auto-approve foi especificado, desabilita a aprovação automática
-    if args.no_auto_approve:
-        agent.auto_approve_all = False
 
     if args.interactive:
         run_interactive(agent, args.stage)

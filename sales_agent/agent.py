@@ -110,6 +110,7 @@ class SalesConsultantAgent:
             blocks.append(self._format_list("Indicadores para acompanhar", scenario.success_metrics))
         if self.best_practices:
             blocks.append(self._format_list("Boas praticas UFIT", self.best_praticas_contextual()))
+        
         return "\n\n".join(blocks)
 
     def best_praticas_contextual(self) -> List[str]:
@@ -121,18 +122,15 @@ class SalesConsultantAgent:
         if not query.strip():
             return None
 
-        normalized_query = query.lower()
-        scored: List[tuple[int, int, SalesScenario]] = []
-        for scenario in self.scenarios:
-            hits = sum(1 for kw in scenario.keywords if kw and kw in normalized_query)
-            stage_match = 1 if stage and stage in scenario.stages else 0
-            scored.append((hits, stage_match, scenario))
-
-        scored.sort(key=lambda item: (item[0], item[1]), reverse=True)
-        top_hits, _, top_scenario = scored[0]
-        if top_hits == 0:
+        ranked = sorted(
+            self.scenarios,
+            key=lambda scenario: scenario.score(query, stage),
+            reverse=True,
+        )
+        top = ranked[0]
+        if top.score(query, stage) == 0:
             return None
-        return top_scenario
+        return top
 
     def _format_header(self, scenario: SalesScenario) -> str:
         return f"Cenario: {scenario.name}\nResumo: {scenario.description}\nTom sugerido: {self.tone}"
