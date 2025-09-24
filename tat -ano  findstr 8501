@@ -1,0 +1,22 @@
+[33mcommit c0e801841af3d50401ffc7427eebb97a544d9b1a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Pedro Levorato <levorato157@gmail.com>
+Date:   Wed Sep 24 08:16:57 2025 -0300
+
+    Atualização completa: todos os arquivos modificados e melhorias de interface
+
+adicionar_16_cenarios_restantes.py
+criar_26_cenarios_vendas.py
+criar_vendas_26_cenarios.py
+database/areas_config.json
+database/vendas_26_cenarios.json
+database/vendas_completo_26.json
+database/vendas_detalhado.json
+gerar_cenarios_fechamento.py
+gerar_cenarios_prospeccao.py
+gerar_vendas_completo.py
+implementar_26_cenarios_completos.py
+reiniciar_streamlit.py
+streamlit_database_compacto.py
+streamlit_database_corrigido.py
+streamlit_database_final.py
+streamlit_database_melhorado.py
