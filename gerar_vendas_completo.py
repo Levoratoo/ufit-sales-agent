@@ -154,4 +154,3 @@ with open('database/vendas_detalhado.json', 'w', encoding='utf-8') as f:
     json.dump(vendas_completo, f, ensure_ascii=False, indent=2)
 
 print("Arquivo de vendas detalhado criado com sucesso!")
-

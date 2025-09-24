@@ -389,4 +389,3 @@ with open('database/fechamento_scenarios.json', 'w', encoding='utf-8') as f:
 print("✅ Arquivo de fechamento criado com sucesso!")
 print(f"📊 Total de cenários de fechamento: {len(cenarios_fechamento)}")
 print("🔄 O Streamlit deve recarregar automaticamente...")
-

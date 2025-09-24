@@ -418,4 +418,3 @@ with open('database/prospeccao_scenarios.json', 'w', encoding='utf-8') as f:
 print("✅ Arquivo de prospecção criado com sucesso!")
 print(f"📊 Total de cenários de prospecção: {len(cenarios_prospeccao)}")
 print("🔄 O Streamlit deve recarregar automaticamente...")
-

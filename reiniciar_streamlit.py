@@ -51,4 +51,3 @@ def reiniciar_streamlit():
 
 if __name__ == "__main__":
     reiniciar_streamlit()
-

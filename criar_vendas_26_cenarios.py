@@ -114,4 +114,3 @@ with open('database/vendas_26_cenarios.json', 'w', encoding='utf-8') as f:
     json.dump(vendas_estrutura, f, ensure_ascii=False, indent=2)
 
 print("Arquivo de vendas com 26 cenários criado com sucesso!")
-

@@ -658,4 +658,3 @@ with open('database/vendas_26_completo.json', 'w', encoding='utf-8') as f:
 print("✅ 16 cenários adicionais implementados com sucesso!")
 print(f"📊 Total de cenários agora: {len(dados['cenarios'])}")
 print("🔄 O Streamlit deve recarregar automaticamente...")
-
